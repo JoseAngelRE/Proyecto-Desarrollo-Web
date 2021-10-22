@@ -4,6 +4,8 @@
     --26: #8c8c8c8c; /*disabled-Hint_text*/
     --12: #b5b5b5; /*dividers*/
     /*Fondo blanco*/
+    --success-color:#2ecc71;
+    --error-color:#e74c3c;
 }
 
 * {
@@ -40,7 +42,73 @@ nav .activa {
 
 /*De aquí para abajo eliminar*/
 /*El <MAIN> es el contenedor principal de cada página*/
-.a{
-    background-color: var(--12);
-    height: 100px;
+
+#contenido {
+    border: 1px solid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
 }
+
+#opciones {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+#contenedor {
+    margin: 0;
+    border: 1px solid red;
+    width: 100%;
+    height: 450px;
+}
+
+.opcion {
+    border: 1px solid;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.opcion:hover {
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px;
+    border: 1px solid;
+    height: 100%;
+}
+
+.form-control {
+    padding-bottom: 10px;
+    border: 1px solid blue;
+    height: auto;
+}
+
+.form-control label {
+    display: block;
+}
+
+.form-control small {
+    display: block;
+}
+
+.esconder {
+    display: none;
+}
+
+
+
+
+
