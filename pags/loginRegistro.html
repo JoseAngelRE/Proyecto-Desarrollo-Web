@@ -16,7 +16,8 @@
       src="https://kit.fontawesome.com/5d433e8279.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="estilos/main.css" />
+    <link rel="stylesheet" href="../estilos/main.css" />
+    <link rel="stylesheet" href="../estilos/login.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -52,10 +53,54 @@
       </div>
     </nav>
 
-    <main>
-      <section class="a"> 
+    <main id="contenido">
+      <section id="opciones">
+        <label id="iniciarSesion" class="opcion">Iniciar sesión</label>
+        <label id="registrate" class="opcion">Registrarte</label>
       </section>
-  </main>
+      <section id="contenedor">
+        <form id="registrar" class="form">
+            <div class="form-control">
+              <label for="usernameRegistrar">Nombre de usuario</label>
+              <input type="text" id="usernameRegistrar" placeholder="Ingresa nombre de usuario" />
+              <small>Mensaje error</small>
+            </div>
+            <div class="form-control">
+              <label for="emailRegistrar">Email</label>
+              <input type="text" id="emailRegistrar" placeholder="Ingresa email" />
+              <small>Mensaje error</small>
+            </div>
+            <div class="form-control">
+              <label for="passwordRegistrar">Contraseña</label>
+              <input type="password" id="passwordRegistrar" placeholder="Ingresa contraseña" />
+              <small>Mensaje error</small>
+            </div>
+            <div class="form-control">
+              <label for="password2Registrar">Confirmar contraseña</label>
+              <input
+                type="password"
+                id="password2Registrar"
+                placeholder="Confirmar contraseña"
+              />
+              <small>Mensaje error</small>
+            </div>
+            <button type="submit">Registrar</button>
+          </form>
+          <form id="iniciar" class="form">
+              <div class="form-control">
+                <label for="emailIniciar">Email</label>
+              <input type="text" id="emailIniciar" placeholder="Ingresa email" />
+              <small>Mensaje error</small>
+              </div>
+              <div class="form-control">
+                <label for="passwordIniciar">Contraseña</label>
+                <input type="password" id="passwordIniciar" placeholder="Ingresa contraseña" />
+                <small>Mensaje error</small>
+              </div>
+              <button type="submit">Iniciar sesion</button>
+          </form>
+      </section>
+    </main>
 
     <footer></footer>
     <script
@@ -68,5 +113,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="../scripts/login.js"></script>
   </body>
 </html>
