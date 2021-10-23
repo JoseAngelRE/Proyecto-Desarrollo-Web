@@ -15,10 +15,12 @@ document.querySelector("#linkRegistrar a").onclick = () => {
   event.preventDefault();
   document.getElementById("iniciarSesion").classList.add("form-hidden");
   document.getElementById("registrar").classList.remove("form-hidden");
+  document.getElementById("signup").checked = true;
 };
 
 document.querySelector("#linkLogin a").onclick = () => {
   event.preventDefault();
   document.getElementById("registrar").classList.add("form-hidden");
   document.getElementById("iniciarSesion").classList.remove("form-hidden");
+  document.getElementById("login").checked = true;
 };
