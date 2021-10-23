@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../estilos/main.css" />
-    <link rel="stylesheet" href="../estilos/login.css">
+    <link rel="stylesheet" href="../estilos/login.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -53,52 +53,78 @@
       </div>
     </nav>
 
-    <main id="contenido">
-      <section id="opciones">
-        <label id="iniciarSesion" class="opcion">Iniciar sesión</label>
-        <label id="registrate" class="opcion">Registrarte</label>
+    <main class="contenedor-principal">
+      <section class="contenedor-titulos">
+        <input type="radio" name="slide" id="login" checked />
+        <input type="radio" name="slide" id="signup" />
+        <label for="login" class="slide login">Inicia sesión</label>
+        <label for="signup" class="slide signup">Registrate</label>
+        <div class="slider-tab"></div>
       </section>
-      <section id="contenedor">
-        <form id="registrar" class="form">
-            <div class="form-control">
-              <label for="usernameRegistrar">Nombre de usuario</label>
-              <input type="text" id="usernameRegistrar" placeholder="Ingresa nombre de usuario" />
-              <small>Mensaje error</small>
-            </div>
-            <div class="form-control">
-              <label for="emailRegistrar">Email</label>
-              <input type="text" id="emailRegistrar" placeholder="Ingresa email" />
-              <small>Mensaje error</small>
-            </div>
-            <div class="form-control">
-              <label for="passwordRegistrar">Contraseña</label>
-              <input type="password" id="passwordRegistrar" placeholder="Ingresa contraseña" />
-              <small>Mensaje error</small>
-            </div>
-            <div class="form-control">
-              <label for="password2Registrar">Confirmar contraseña</label>
-              <input
-                type="password"
-                id="password2Registrar"
-                placeholder="Confirmar contraseña"
-              />
-              <small>Mensaje error</small>
-            </div>
-            <button type="submit">Registrar</button>
-          </form>
-          <form id="iniciar" class="form">
-              <div class="form-control">
-                <label for="emailIniciar">Email</label>
-              <input type="text" id="emailIniciar" placeholder="Ingresa email" />
-              <small>Mensaje error</small>
-              </div>
-              <div class="form-control">
-                <label for="passwordIniciar">Contraseña</label>
-                <input type="password" id="passwordIniciar" placeholder="Ingresa contraseña" />
-                <small>Mensaje error</small>
-              </div>
-              <button type="submit">Iniciar sesion</button>
-          </form>
+      <section class="contenedor-form">
+        <form class="form" id="iniciarSesion">
+          <h2>Inicia sesión</h2>
+          <small>Mensaje error</small>
+          <section class="campo-formulario">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo electronico"
+              autofocus
+            />
+            
+          </section>
+          <section class="campo-formulario">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+            />
+            
+          </section>
+          <input type="submit" class="btnForm" value="Iniciar sesión" />
+          <section class="form-link" id="linkRegistrar">
+            No estas registrado? <a href="">Registrate</a>
+          </section>
+        </form>
+        <form class="form form-hidden" id="registrar">
+          <h2>Crea una cuenta</h2>
+          <section class="campo-formulario">
+            <input
+              type="text"
+              name="nombreUsuario"
+              id="nombreUsuario"
+              placeholder="Nombre de usuario"
+              autofocus
+            />
+            <small>Mensaje error</small>
+          </section>
+          <section class="campo-formulario">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo electronico"
+              autofocus
+            />
+            <small>Mensaje error</small>
+          </section>
+          <section class="campo-formulario">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+            />
+            <small>Mensaje error</small>
+          </section>
+          <input type="submit" class="btnForm" value="Registrarte" />
+          <section class="form-link" id="linkLogin">
+            Ya tienes una cuenta? <a href="">Inicia sesión</a>
+          </section>
+        </form>
       </section>
     </main>
 

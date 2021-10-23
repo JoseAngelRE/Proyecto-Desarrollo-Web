@@ -1,17 +1,24 @@
-const btnIniciarSesion = document.getElementById('iniciarSesion');
+const btnLogin = document.getElementById("login");
+const btnRegistrar = document.getElementById("signup");
 
-const btnRegistrar = document.getElementById('registrate');
+btnLogin.onclick = () => {
+  document.getElementById("registrar").classList.add("form-hidden");
+  document.getElementById("iniciarSesion").classList.remove("form-hidden");
+};
 
 btnRegistrar.onclick = () => {
-    document.getElementById('iniciar').className = "esconder";
-    if ( document.getElementById('registrar').className === "esconder") {
-        document.getElementById('registrar').className = "form";
-    }
-}
+  document.getElementById("iniciarSesion").classList.add("form-hidden");
+  document.getElementById("registrar").classList.remove("form-hidden");
+};
 
-btnIniciarSesion.onclick = () => {
-    document.getElementById('registrar').className = "esconder";
-    if ( document.getElementById('iniciar').className === "esconder") {
-        document.getElementById('iniciar').className = "form";
-    }
-}
+document.querySelector("#linkRegistrar a").onclick = () => {
+  event.preventDefault();
+  document.getElementById("iniciarSesion").classList.add("form-hidden");
+  document.getElementById("registrar").classList.remove("form-hidden");
+};
+
+document.querySelector("#linkLogin a").onclick = () => {
+  event.preventDefault();
+  document.getElementById("registrar").classList.add("form-hidden");
+  document.getElementById("iniciarSesion").classList.remove("form-hidden");
+};
