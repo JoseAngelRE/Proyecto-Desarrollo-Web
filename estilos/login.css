@@ -138,13 +138,7 @@ h2 {
     visibility: hidden;
 }
 
-#iniciarSesion small {
-    color: var(--error-color);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-        
-}
+
 
 .campo-formulario.error small {
     visibility: visible;
