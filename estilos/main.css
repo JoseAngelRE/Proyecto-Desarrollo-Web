@@ -37,10 +37,3 @@ nav .activa {
     background-color: var(--26);
 }
 
-
-/*De aquí para abajo eliminar*/
-/*El <MAIN> es el contenedor principal de cada página*/
-.a{
-    background-color: var(--12);
-    height: 100px;
-}
