@@ -36,33 +36,26 @@ header .hero-parrafo p {
     text-align: center;
 }
 
-
+/*-------- main --------*/
+/* _____ problematica _____ */
 main .problematica{
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top:50px;
+    margin-top:80px;
     height: 25vh;
     background-color: var(--12);
     
-}
-main  .problematica .img-problematica {
-    width: 100%;
-    height: auto;
-    background-image: url("/recursos/imgs/index-imgs/problemas.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 main .problematica .barra-circulos {
     position: absolute;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 25px;
     width: 75%;
-    height: 10vh;
-    top : -85px;
-    top: calc(-5vh - 50px);
+    height: 10vh;   min-height: 80px;
+    top : -85px;    top: calc(-5vh - 80px);
     background-color: var(--26);
 }
 main .problematica .barra-circulos .circulo-informativo{
@@ -72,15 +65,39 @@ main .problematica .barra-circulos .circulo-informativo{
     background-color: var(--12);
     text-align: center; /*AAAAAA*/
 }
-
-
-main .primer {
-    top: 10px;
-    height: 10vh;
-    background-color: aquamarine;
-    opacity: 0.5a;
+main .problematica .img-problematica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-image: url("/recursos/imgs/index-imgs/problemas.jpg");
+    background-position: center; /* background-position: center/cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .problematica .img-problematica .problematica-parrafo {
+    padding:25px 40px 10px;
+    color: white;
+    background-color: var(--26);
 }
 
+/* _____ consultar _____ */
+main .consultar {
+    display: flex;
+    height: 300px;
+}
+main .consultar img {
+    width: 45%;
+    object-fit: cover;
+    object-position: 0% 35%;
+    opacity: 0.8;
+}
+main .consultar article {
+    padding: 0px 30px 10px;
+}
+
+/* _____ segundo _____ */
 main .segundo {
     height: 10vh;
     background-color: aquamarine;
@@ -96,28 +113,62 @@ main .segundo {
         
     }    
 } */
+@media screen and (max-width:750px) {
+    
+    main .consultar{
+        height: auto;
+        object-position: 50% 50%;
+    }
+}
 
 @media only screen and (max-width: 600px) {
-    .hero-parrafo p {
+    header .hero-parrafo p {
         font-size: 1.5rem;
     }
-    main .problematica {
-        margin-top: 80px;
-    }
+
     main .problematica .barra-circulos {
         width: 90%;
-        top : -85px;
-        top: calc(-5vh - 80px);
     }
+    main .problematica .img-problematica .problematica-parrafo {
+        padding:15px 20px 5px;
+    }
+
+    main .consultar {
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .consultar img {
+        order: 2;
+        width: 70vw;
+        height: 35vw;
+    }
+    
 
 }
 
-@media screen and (max-width: 360px) {
-    .hero-parrafo p {
-        font-size: 1.25rem;
+@media screen and (max-width: 370px) {
+    header .hero-parrafo {
+        width:90%;
     }
-    
+    header .hero-parrafo p {
+        font-size: 1rem;
+    }
+
     main .problematica .barra-circulos {
         width: 100%;
     }
+    main .problematica .img-problematica .problematica-parrafo p {
+        font-size: small;
+    }
+
+    main .consultar img {
+        width: 100%;
+        height: 200px;
+    }
+    main .consultar article {
+        border-top: 2px solid black;
+        padding: 20px;
+    }
+
 }
