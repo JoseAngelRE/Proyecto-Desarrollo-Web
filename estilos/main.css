@@ -17,9 +17,10 @@ body {
 }
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
-section{
+main section{
     width: 80%;
     margin-top: 20px;
     max-width: 1200px;
