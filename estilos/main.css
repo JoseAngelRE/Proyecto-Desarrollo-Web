@@ -17,11 +17,12 @@ body {
 }
 main {
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
 }
-section{
+main section{
     width: 80%;
-    margin-top: 20px;
+    margin-top: 30px;
     max-width: 1200px;
 }
 nav{
