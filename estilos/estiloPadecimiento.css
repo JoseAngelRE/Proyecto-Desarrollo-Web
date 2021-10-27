@@ -1,0 +1,77 @@
+:root{
+    --87: #3c3c3c;  /*Text*/
+    --54: #515151; /*Icons-secondary_Text*/
+    --26: #8c8c8c8c; /*disabled-Hint_text*/
+    --12: #b5b5b5; /*dividers*/
+    /*Fondo blanco*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: cursive;
+    font-size: 18px;
+}
+/*
+main {
+    display: flex;
+    justify-content: center;
+}*/
+section{
+    width: 80%;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+nav{
+    background-color: var(--12);
+    color: var(--87);
+}
+nav .navbar-brand h1{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 35px;
+}
+nav .activa {
+    color: var(--54);
+    background-color: var(--26);
+}
+
+
+/*De aquí para abajo eliminar*/
+/*El <MAIN> es el contenedor principal de cada página*/
+
+
+.flex-container {
+    display: flex;
+    background-color: white;
+    
+  
+  }
+  .flex-container >div{
+    border-style: ridge;
+    border-color: black;
+    border-radius: 8px;
+    overflow:hidden;
+    background-color: white;
+      
+  }
+
+
+  img {
+    height: 200px;
+    width: 100%;
+    object-fit: fill;
+    border-bottom: 4px;
+    border-bottom-color:black;
+    border-bottom-style: solid;
+    }
+
+    .flex-container>div:hover{
+        -webkit-transform:scale(1.3);transform:scale(1.3);
+    }
+    p{
+        padding-top: 5%;
+        text-align: center;
+    }
