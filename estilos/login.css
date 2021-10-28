@@ -3,7 +3,10 @@
   --success-color: #2ecc71;
   --error-color: #e74c3c;
 }
+
+
 .contenedor-principal {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   max-width: 390px;
