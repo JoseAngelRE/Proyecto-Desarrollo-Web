@@ -106,10 +106,37 @@ main .segundo img {
     border-radius: 5vw;
 }
 
-
-
-
-
+/* _____ tercero _____ */
+main .tercero {
+    justify-content: center;
+    align-items: center;
+}
+main .tercero .mitos {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-image: url("/recursos/imgs/index-imgs/mitos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.titulo , .lista-mitos {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--26);
+    color:white;
+}
+main .tercero .mitos .titulo {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    border-left: 2px solid black;
+}
+main .tercero .mitos .lista-mitos {
+    list-style: none;
+    font-weight: bold;
+}
 
 
 /* ########## MEDIAS ########## */
@@ -152,6 +179,17 @@ main .segundo img {
     }
     main .consultar img {
         order: 2;
+    }
+
+    
+    main .tercero .mitos {
+        flex-direction: column;
+    }
+    main .tercero .mitos .titulo {
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        border-bottom: 2px solid black;
+        border-left: none;
     }
     
 
