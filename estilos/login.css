@@ -94,6 +94,7 @@ input[type="radio"] {
 .campo-formulario {
   position: relative;
   width: 100%;
+  margin-top: 7px;
   padding-bottom: 20px;
 }
 
