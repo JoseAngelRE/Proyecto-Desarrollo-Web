@@ -36,10 +36,13 @@ header .hero-parrafo p {
     text-align: center;
 }
 
+
+main section {
+    display: flex;
+}
 /*-------- main --------*/
 /* _____ problematica _____ */
 main .problematica{
-    display: flex;
     justify-content: center;
     position: relative;
     margin-top:80px;
@@ -59,9 +62,9 @@ main .problematica .barra-circulos {
     background-color: var(--26);
 }
 main .problematica .barra-circulos .circulo-informativo{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 75px;
+    height: 75px;
+    border-radius: 37.5px;
     background-color: var(--12);
     text-align: center; /*AAAAAA*/
 }
@@ -82,27 +85,30 @@ main .problematica .img-problematica .problematica-parrafo {
     background-color: var(--26);
 }
 
-/* _____ consultar _____ */
-main .consultar {
-    display: flex;
+/* _____ section con => img y article _____ */
+main .sec-article-img {
     height: 300px;
 }
-main .consultar img {
+main .sec-article-img article {
+    padding: 20px 30px 10px;
+}
+main .sec-article-img img{
     width: 45%;
     object-fit: cover;
-    object-position: 0% 35%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
-main .consultar article {
-    padding: 0px 30px 10px;
+/* _____ consultar _____ */
+main .consultar img {
+    object-position: 0% 35%;
+}
+/* _____ segundo _____ */
+main .segundo img {
+    border-radius: 5vw;
 }
 
-/* _____ segundo _____ */
-main .segundo {
-    height: 10vh;
-    background-color: aquamarine;
-    opacity: 0.5a;
-}
+
+
+
 
 
 
@@ -114,9 +120,11 @@ main .segundo {
     }    
 } */
 @media screen and (max-width:750px) {
-    
-    main .consultar{
+    /*CLASE GLOBAL => SECTION CON ARTICLE E IMG ADENTRO*/
+    main .sec-article-img {
         height: auto;
+    }
+    main .consultar{
         object-position: 50% 50%;
     }
 }
@@ -133,15 +141,17 @@ main .segundo {
         padding:15px 20px 5px;
     }
 
-    main .consultar {
-        padding-top: 10px;
+    main .sec-article-img {
         flex-direction: column;
         align-items: center;
+        padding-top: 10px;
+    }
+    main .sec-article-img img {
+        width: 70vw;
+        height: 35vw;
     }
     main .consultar img {
         order: 2;
-        width: 70vw;
-        height: 35vw;
     }
     
 
@@ -162,11 +172,11 @@ main .segundo {
         font-size: small;
     }
 
-    main .consultar img {
+    main .sec-article-img img {
         width: 100%;
         height: 200px;
     }
-    main .consultar article {
+    main .sec-article-img article {
         border-top: 2px solid black;
         padding: 20px;
     }
