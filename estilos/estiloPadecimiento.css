@@ -29,6 +29,9 @@
         -webkit-transform:scale(0.9);transform:scale(0.9);
     }
 
+
+
+  
     
     p{
         padding-top: 5%;
@@ -40,7 +43,8 @@
         margin-right: auto;
         padding-bottom: 2%;
         font-size: large;  
-
+        width: 80%;
+      
 
       }
     
@@ -65,4 +69,14 @@
         display:block;
         margin:auto;
         padding: 1%;
+    }
+
+    .contenedorFicha{
+      background-color: #d1f3f3;
+      padding-bottom: 5%;
+      padding-top: 5%;
+      border-style: ridge;
+      border-color: black;
+      border-radius: 2px;
+
     }
