@@ -1,17 +1,41 @@
 :root{
-    --87: #3c3c3c;  /*Text*/
-    --54: #515151; /*Icons-secondary_Text*/
-    --26: #8c8c8c8c; /*disabled-Hint_text*/
-    --12: #b5b5b5; /*dividers*/
+    --87: #1D7874;  /*Text*/
+
+    
+    --54: #B4AD78; /*Icons-secondary_Text*/
+    
+    --26: #CFE6E0; /*disabled-Hint_text*/
+
+    
+    --12: #f5b3ae; /*dividers*/
+    --new: #DE6025
     /*Fondo blanco*/
+}
+/*
+1D7874 - Myrtle Green
+B4AD78 - Misty Moss
+
+CFE6E0 - light Periwinkle
+
+FE938C - Congo Pink
+DE6025 - Flame
+*/
+
+
+
+:root{
     --success-color:#2ecc71;
     --error-color:#e74c3c;
+    --contenedor :#d0f0a9;
+    
     --87: #3c3c3c;  
     --54: #515151; 
-    --26: #8c8c8c; 
-    --12: #b5b5b5; 
+    
+    --26: #DE6025; 
+    --12: #1D7874; 
     
 }
+
 
 * {
     margin: 0;
@@ -19,7 +43,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
+    font-family: sans-serif ;
     font-size: 18px;
 }
 main {
@@ -45,6 +69,10 @@ nav .activa {
     background-color: var(--26);
 }
 
+nav div #navbar {
+    color: white;
+    font-weight: bold;
+}
 /*boton arriba*/
 
 #button-up {
