@@ -1,39 +1,13 @@
 :root{
-    --87: #1D7874;  /*Text*/
-
-    
-    --54: #B4AD78; /*Icons-secondary_Text*/
-    
-    --26: #CFE6E0; /*disabled-Hint_text*/
-
-    
-    --12: #f5b3ae; /*dividers*/
-    --new: #DE6025
-    /*Fondo blanco*/
-}
-/*
-1D7874 - Myrtle Green
-B4AD78 - Misty Moss
-
-CFE6E0 - light Periwinkle
-
-FE938C - Congo Pink
-DE6025 - Flame
-*/
-
-
-
-:root{
     --success-color:#2ecc71;
     --error-color:#e74c3c;
     --contenedor :#d0f0a9;
-    
-    --87: #3c3c3c;  
-    --54: #515151; 
-    
+    --circulos-info: #f5ada7;
+    /* --87: #CFD6E0;   */
+    --87: #CCD3D9;  
+    --54: #8c8c8c8c; 
     --26: #DE6025; 
-    --12: #1D7874; 
-    
+    --12: #1D7874;    
 }
 
 
@@ -70,11 +44,18 @@ nav .activa {
 }
 
 nav div #navbar {
-    color: white;
     font-weight: bold;
 }
-/*boton arriba*/
+nav div #navbar ul li a {
+    color: #e6e6e6;
+}
 
+footer {
+    margin-top: 50px;
+    border-top: solid 5px black;
+}
+
+/*boton arriba*/
 #button-up {
     width: 60px;
     height: 60px;

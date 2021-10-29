@@ -20,8 +20,9 @@ header .hero {
 header .hero-parrafo {
     width:75%;
     padding:25px 40px 10px;
-    background-color: var(--26) ;
+    background-color: var(--54) ;
     color: white;
+    font-weight: bold;
 }
 header .hero-parrafo p {
     font-size: 2.5rem;
@@ -39,7 +40,7 @@ main .problematica{
     position: relative;
     margin-top:80px;
     height: 25vh;
-    background-color: var(--12);
+    background-color: var(--54);
     
 }
 main .problematica .barra-circulos {
@@ -51,14 +52,16 @@ main .problematica .barra-circulos {
     width: 75%;
     height: 10vh;   min-height: 80px;
     top : -85px;    top: calc(-5vh - 80px);
-    background-color: var(--26);
+    background-color: var(--54);
 }
 main .problematica .barra-circulos .circulo-informativo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 75px;
     height: 75px;
     border-radius: 37.5px;
-    background-color: var(--12);
-    text-align: center; /*AAAAAA*/
+    background-color: var(--circulos-info);
 }
 main .problematica .img-problematica {
     display: flex;
@@ -74,7 +77,8 @@ main .problematica .img-problematica {
 main .problematica .img-problematica .problematica-parrafo {
     padding:25px 40px 10px;
     color: white;
-    background-color: var(--26);
+    font-weight: bold;
+    background-color: var(--54);
 }
 
 /* _____ section con => img y article _____ */
@@ -94,7 +98,7 @@ main .consultar img {
     object-position: 0% 35%;
 }
 /* _____ segundo _____ */
-main .segundo img {
+main .segundo img, main .consultar img {
     border-radius: 5vw;
 }
 
@@ -117,7 +121,7 @@ main .tercero .mitos {
 .titulo , .lista-mitos {
     padding: 10px;
     text-align: center;
-    background-color: var(--26);
+    background-color: var(--54);
     color:white;
 }
 main .tercero .mitos .titulo {
