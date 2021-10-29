@@ -1,0 +1,60 @@
+:root{
+    --colorFondo: #ECBA82;
+    --colorDatos: #ECDBC8;
+    --colorRecomendaciones: #696159;
+}
+
+main section{
+    background-color: var(--colorFondo);
+}
+
+#perfilHeader{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+#icono{
+    margin-left: 5%;
+}
+
+#perfilContent{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#perfilContent div{
+    width: 45%;
+    background-color:  var(--colorDatos);
+}
+
+#perfilContent div h2{
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+#perfilContent div p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#recomendaciones{
+    margin-top: 30px;
+    background-color: var(--colorRecomendaciones);
+    color: white;
+}
+
+#recomendaciones #titulo{
+    text-align: center;
+}
+
+#recomendacionesTexto{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
