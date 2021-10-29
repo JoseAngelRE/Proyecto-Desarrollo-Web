@@ -6,7 +6,7 @@ function desplegarObesidad(valor){
     document.getElementById("fichaDiabetes").style.display='none';
     document.getElementById("fichaCardio").style.display='none';
     limpiar();
-    document.getElementById("1").style.backgroundColor="yellow";
+    document.getElementById("1").style.backgroundColor="#f5b3ae";
 
 }
 function desplegarHipertension(){
@@ -18,7 +18,7 @@ function desplegarHipertension(){
     document.getElementById("fichaCardio").style.display='none';
 
     limpiar();
-    document.getElementById("3").style.backgroundColor="yellow";
+    document.getElementById("3").style.backgroundColor="#f5b3ae";
     
 }
 function desplegarAnemia(){
@@ -29,7 +29,7 @@ function desplegarAnemia(){
     document.getElementById("fichaDiabetes").style.display='none';
     document.getElementById("fichaCardio").style.display='none';
     limpiar();
-    document.getElementById("6").style.backgroundColor="yellow";
+    document.getElementById("6").style.backgroundColor="#f5b3ae";
 }
 function desplegarGota(){
     document.getElementById("fichaObesidad").style.display='none';
@@ -40,7 +40,7 @@ function desplegarGota(){
     document.getElementById("fichaCardio").style.display='none';
 
     limpiar();
-    document.getElementById("2").style.backgroundColor="yellow";
+    document.getElementById("2").style.backgroundColor="#f5b3ae";
     
 }
 function desplegarDiabetes(){
@@ -51,7 +51,7 @@ function desplegarDiabetes(){
     document.getElementById("fichaDiabetes").style.display='block';
     document.getElementById("fichaCardio").style.display='none';
     limpiar();
-    document.getElementById("4").style.backgroundColor="yellow";
+    document.getElementById("4").style.backgroundColor="#f5b3ae";
     
 }
 function desplegarCardio(){
@@ -64,7 +64,7 @@ function desplegarCardio(){
 
 
     limpiar();
-    document.getElementById("5").style.backgroundColor="yellow";
+    document.getElementById("5").style.backgroundColor="#f5b3ae";
     
 }
 
