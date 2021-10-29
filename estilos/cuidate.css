@@ -136,7 +136,7 @@ ul{
 
 .info-izq1{
     width: 100%;
-    height: 10em;
+    height: auto;
     font-size: .5em
 }
 
@@ -150,7 +150,7 @@ ul{
 
 .info-der2{
     width: 100%;
-    height: 10em;
+    height: auto;
     font-size: .5em;
 }
 
