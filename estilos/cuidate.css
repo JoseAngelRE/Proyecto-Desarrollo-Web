@@ -87,6 +87,7 @@ ul{
     height: 15vh;
     background-color: #b8d793;
     border-radius: 30px;
+    font-size: 45px;
 }
 
 .final div{
@@ -137,7 +138,7 @@ ul{
 .info-izq1{
     width: 100%;
     height: auto;
-    font-size: .5em
+    font-size: .8em
 }
 
 .info-der1{
@@ -151,7 +152,7 @@ ul{
 .info-der2{
     width: 100%;
     height: auto;
-    font-size: .5em;
+    font-size: .8em;
 }
 
 .cuadro-izq{
@@ -174,6 +175,10 @@ ul{
 
 section{
     margin-top: 2vh;   
+}
+
+.final{
+    font-size: 1.25em;
 }
 
 }
