@@ -1,0 +1,158 @@
+body{
+    background-color: #ffd033;
+}
+
+main{
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+
+section{
+    margin-top: 8vh;   
+}
+
+p{
+    margin: 0;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    background-color: #b8d793;
+    border-radius: 30px;
+    color: #e66646;
+}
+
+.parte{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.info-izq1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b8d793;
+    width: 45%;
+    height: 100%;
+    padding: 5%;
+    border-radius:  25% 10%;
+}
+
+
+ul{
+    line-height:250%;
+    word-wrap: break-word;
+}
+
+.info-izq1 ul{
+    font-size: .8em;
+}
+
+.info-der1{
+    width: 50%;
+}
+
+.info-der1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10% 30% 50% 70%;
+}
+
+.info-der2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    font-size: .9em;
+    padding: 5%;
+}
+
+.cuadro-izq{
+    width: 50%;
+}
+
+.cuadro-izq img{
+    width: 100%;
+    height: 100%;
+    border-radius:  50% 70% 10% 30%;
+}
+
+.final{
+    height: 15vh;
+    background-color: #b8d793;
+    border-radius: 30px;
+    font-size: 45px;
+}
+
+.final div{
+    width: 100%;
+    font-size: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+.parte{
+    flex-direction: column;
+}
+
+.titulo h2{
+    font-size: 1em;
+}
+
+.info-izq1{
+    width: 100%;
+    height: auto;
+    font-size: .8em
+}
+
+.info-der1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9em;
+}
+
+.info-der2{
+    width: 100%;
+    height: auto;
+    font-size: .8em;
+}
+
+.cuadro-izq{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9em;
+}
+
+.cuadro-izq img{
+    width: 60%;
+    height: 100%;
+}
+
+.info-der1 img{
+    width: 60%;
+    height: 100%;
+}
+
+section{
+    margin-top: 2vh;   
+}
+
+.final{
+    font-size: 1.25em;
+}
+
+}
