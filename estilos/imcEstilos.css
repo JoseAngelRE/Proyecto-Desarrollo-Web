@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+.imc {
+    border: 1px solid;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.tituloX {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(99, 187, 238);
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+hr {
+    width: 100%;
+}
+
+.campoX {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.generos {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contenedor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.caja {
+    text-align: center;
+    width: 50%;
+    margin: 30px;
+}
+
+.uno {
+    border: 1px solid red;
+}
+
+
+.labelPesoEstatura {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#btnSubmit {
+    margin-top: 50px;
+    width: 40%;
+    padding: 10px;
+}
