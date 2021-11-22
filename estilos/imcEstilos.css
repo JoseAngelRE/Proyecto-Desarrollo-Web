@@ -58,6 +58,11 @@ hr {
     border: 1px solid red;
 }
 
+.large-12 {
+    margin-top: 20px;
+    text-align: left;
+}
+
 
 .labelPesoEstatura {
     display: block;
@@ -68,4 +73,16 @@ hr {
     margin-top: 50px;
     width: 40%;
     padding: 10px;
+}
+
+img.mujer {
+    display: block;
+    height: 300px;
+    margin: auto auto 20px;
+}
+
+h3#des {
+    font-size: 21px;
+    color: #666;
+    font-weight: 200;
 }

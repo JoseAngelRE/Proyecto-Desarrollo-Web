@@ -96,11 +96,19 @@
                 <input type="text" placeholder="Altura" id="altura" />
               </div>
             </section>
-            <input type="submit" value="CALCULAR" id="btnSubmit" />
+            <input type="button" value="CALCULAR" id="btnSubmit" onclick="calculaesIMC()"/>
           </form>
         </section>
         <section class="caja dos">
           <h1 class="tituloX">Resultados</h1>
+          <div>
+            <div class="large-12 columns">
+                <h2 id="imc2"></h2>
+                <h3 class="cal" id="des"></h3>
+                <img src="" class="mujer" id="img">
+                <span id="leyenda"></span>
+            </div>
+          </div>
         </section>
       </section>
     </main>
@@ -196,5 +204,84 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script>
+
+function calculaesIMC()
+	{
+	 
+		var peso2, altura, imc, imc2, img, des, leyenda;
+		
+		 peso2=document.getElementById("peso").value;
+		 altura=document.getElementById("altura").value/100;
+
+		
+		 imc=peso2/(altura*altura);
+		
+		if(imc<=18.5)
+		{
+		
+
+		imgpath = '../recursos/imgs/imc/';
+		src = $('#img').attr('src', imgpath + "bajo-peso.svg" );
+		imc2="IMC Bajo";
+		des="Menor que 18"
+		
+		leyenda="El bajo peso puede ser causado por una deficiente alimentación o alguna enfermedad. Acude con un especialista para analizar las causas y ayudarte a llegar a tu peso ideal" + (altura*altura*18.5-peso2).toFixed(1) + " kilos";
+		}
+		else if(imc<=25)
+		{
+		
+		imgpath = '../recursos/imgs/imc/';
+		src = $('#img').attr('src', imgpath + "normal.svg" );
+		imc2="IMC Normal"
+		des="Entre 18.5 y 24.9";
+		leyenda="¡Tu IMC indica que estás en tu peso normal. Al estar en este nivel, se reducen los riesgos a la salud mejorando tu calidad de vida en todos los sentidos! ";
+		
+		}
+		else if(imc<=30)
+		{
+		
+		imgpath = '../recursos/imgs/imc/';
+		src = $('#img').attr('src', imgpath + "sobrepeso.svg" );
+		imc2="IMC Sobrepeso";
+		des="Entre 25 y 29.9";
+		leyenda="¡El sobrepeso incrementa el riesgo de enfermedad cardiovascular. Asesórate con un especialista, sigue un plan de alimentación y ejercítate regularmente; así llegarás a tu IMC normal! ";
+		
+		}
+		 else if(imc<=35)
+		{
+		
+		imgpath = '../recursos/imgs/imc/';
+		src = $('#img').attr('src', imgpath + "obesidad.svg" );
+		imc2="IMC Obesidad grado I ";
+		des="Entre 30 y 34.9";
+		leyenda="Riesgo de desarrollar enfermedades cardiovasculares. Visita a un especialista, apégate al plan de alimentación, ejercicios e indicaciones. Recuerda, restablecer tu salud requiere de un compromiso. ";
+		
+		}
+
+		else if(imc<=40)
+		 {
+      imgpath = '../recursos/imgs/imc/';
+		 src = $('#img').attr('src', imgpath + "obesidad2.svg" );
+		 imc2="IMC Obesidad Grado II ";
+		 des=" Entre 35 y 39.9";
+		 leyenda="Riesgo elevado para enfermedades cardiovasculares. Visita a un especialista lo más pronto posible y sigue sus indicaciones para iniciar un programa para bajar de peso. ";
+		 
+		 }
+		 else if(imc>=40)
+		 {
+      imgpath = '../recursos/imgs/imc/';
+		 src = $('#img').attr('src', imgpath + "obsidad3.svg" );
+		 imc2="IMC Obesidad grado III: ";
+		  des="Igual o mayor de 40";
+		 leyenda="Riesgo muy elevado de enfermedades cardiovasculares. ¡Cuidado! No dejes pasar más tiempo y consulta a un especialista de inmediato, él te ayudará a analizar las causas y te brindará un programa adecuado. "
+		 
+		 }
+
+		$("#imc2").text(imc2);
+		$("#leyenda").html(leyenda);
+		$("#des").html(des);
+		 }
+    </script>
   </body>
 </html>
