@@ -3,7 +3,6 @@
 }
 
 .imc {
-    border: 1px solid;
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -30,12 +29,10 @@ hr {
 
 .campoX {
     display: flex;
-    /*justify-content: space-around;*/
     padding: 20px;
-    border: 1px solid;
     flex-wrap: wrap;
     align-items: center;
-  justify-content: space-around;
+    justify-content: space-around;
 }
 
 .generos {
@@ -54,30 +51,26 @@ hr {
 }
 
 .caja {
-    /*text-align: center;*/
     width: 47%;
-    /*margin: 30px;*/
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
 }
 
 .campito{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
 }
 .cajaInput{
     width: 90%;
 }
-.uno {
-    border: 1px solid red;
-}
+
 
 .large-12 {
     margin-top: 20px;
