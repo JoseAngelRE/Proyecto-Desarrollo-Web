@@ -70,7 +70,7 @@
       <section class="contenedor">
         <section class="caja uno">
           <h1 class="tituloX">Completa los siguientes campos</h1>
-          <form action="">
+          <form name="form" method="get">
             <section class="campoX generos">
               <div>
                 <input type="radio" name="genero" id="generoMujer" />
@@ -89,17 +89,18 @@
                 <label class="texto labelPesoEstatura" for="peso"
                   >Introduce tu peso (Kg)</label
                 >
-                <input class="cajaInput" type="text" placeholder="Peso" id="peso" />
+                <input class="cajaInput" type="text" name="peso" placeholder="Peso" id="peso" pattern="[0-9\/]*" maxlength="3" onkeypress="return esNumeros(event)" onclick="this.select()" required/>
               </div>
 
               <div class="campito">
                 <label class="texto labelPesoEstatura" for="altura"
                   >Introduce tu altura (cm)</label
                 >
-                <input class="cajaInput" type="text" placeholder="Altura" id="altura" />
+                <input class="cajaInput" type="text" name="altura" placeholder="Altura" id="altura" pattern="[0-9\/]*" maxlength="3" onkeypress="return esNumeros(event)" onclick="this.select()" required/>
               </div>
             </section>
-            <input type="button" value="CALCULAR" id="btnSubmit" onclick="calculaesIMC()"/>
+            <input type="button" value="CALCULAR" id="btnCalcular" onclick="calculaesIMC()"/>
+            <input type="submit" value="GUARDAR" id="btnSubmit" name="btnSubmit"/>
           </form>
         </section>
         <section class="caja dos">
@@ -209,10 +210,60 @@
     ></script>
     <script>
 
+function esNumeros(e) {
+    return e.charCode >= 48 && e.charCode <= 57;
+}
+
+var imc2;
+
+if(localStorage.getItem("peso") != null && localStorage.getItem("altura") != null){
+    document.form.peso.value = localStorage.getItem("peso");
+    document.form.altura.value = localStorage.getItem("altura");
+}
+
+
+document.form.onsubmit = function(){
+    var peso = document.form.peso;
+    var altura = document.form.altura;
+    var metodo = document.form.method;
+    var url = "../backendcodigo/guardarIMC.php";
+    calculaesIMC();
+    if (typeof(Storage) !== "undefined") {
+		localStorage.setItem(peso.name, peso.value);
+        localStorage.setItem(altura.name, altura.value);
+	} else {
+		alert("Sorry, your browser does not support Web Storage...");
+	}
+    ajax(metodo, url, peso.name, peso.value, altura.name, altura.value, "resultado", imc2);
+}
+
+function ajax(metodo, url, variable1 ,valor1, variable2, valor2, variable3, valor3){
+    var httpRequest;
+
+    if (window.XMLHttpRequest) {
+        httpRequest = new XMLHttpRequest();
+    }else{
+        httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+        }
+    }
+
+    if(metodo == "get"){
+        httpRequest.open(metodo, url+"?"+variable1+"=" + valor1 + "&"+variable2+"=" + valor2+ "&"+variable3+"=" + valor3);
+    }else{
+        httpRequest.open(metodo, url);
+        httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    }
+    httpRequest.send(variable1+"=" + valor1 + "&"+variable2+"=" + valor2 + variable3+"=" + valor3);
+}
+
 function calculaesIMC()
 	{
 	 
-		var peso2, altura, imc, imc2, img, des, leyenda;
+		var peso2, altura, imc, img, des, leyenda;
 		
 		 peso2=document.getElementById("peso").value;
 		 altura=document.getElementById("altura").value/100;
