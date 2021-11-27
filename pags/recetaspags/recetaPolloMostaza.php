@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Filete de res con vegetales</title>
+    <title>Pollo a la mostaza</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -52,110 +52,94 @@
             <li class="nav-item cosa">
               <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.php"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Filete de res con vegetales</h1>
+      <h1>Pollo a la mostaza</h1>
       <h4 class="enlaces-recetas">
         <a href="../recetaMenu.php">Recetas</a> >
-        <a href="#">Filete de res con vegetales</a>
+        <a href="#">Pollo a la mostaza</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
-          <li><i class="bi bi-alarm"></i>60 minutos</li>
+          <li><i class="bi bi-alarm"></i>30 minutos</li>
           <li id="descargarBtn">
             <i class="bi bi-cloud-arrow-down"></i>Descargar
           </li>
           <li id="imprimirBtn"><i class="bi bi-printer"></i>Imprimir</li>
         </ul>
       </section>
-      <img
-        src="../../recursos/imgs/recetasimgs/res-esparragos.jpg"
-        alt="tabla-vegetal"
-      />
+      <img src="../../recursos/imgs/recetasimgs/Pollo-a-la-mostaza-2.jpg" alt="tabla-vegetal" />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Filete de res con vegetales</h1>
+        <h1 id="nombreReceta">Pollo a la mostaza</h1>
         <p>
-          Los espárragos son ricos en antioxidantes, minerales y fibra que
-          favorecen el tránsito intestinal.
+          La miel es un excelente sustituto del azúcar, actúa como antioxidante,
+          es rico en vitaminas del complejo B y puede ayudar a reducir los
+          niveles del colesterol.
         </p>
 
+        <p>
+          Así mismo el consumo regular del pollo puede ayudar a mantener un plan
+          de alimentación saludable y benéfico para el organismo. Para encontrar
+          nuevas formas de prepararlo y desenvolverte en la cocina, te
+          presentamos esta receta de pollo a la mostaza que no te decepcionará.
+        </p>
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <li>1 kg de filete de res en una pieza.</li>
-              <li>3 rebanadas de tocino de pavo, picado.</li>
-              <li>3 dientes de ajo rebanados delgados.</li>
-              <li>1 manojo de espárragos, cortados en trocitos.</li>
-              <li>1 taza de chícharos frescos.</li>
-              <li>4 cebollitas de cambray rebanadas.</li>
-              <li>Sal y pimienta para sazonar.</li>
+              <h4>Ingredientes:</h4>
+              <li>
+                8 muslos de pollo sin piel.
+              </li>
+              <li><sup>1</sup>/<sub>4</sub> de cucharadita de sal.</li>
+              <li><sup>1</sup>/<sub>4</sub> de cucharadita de pimienta.</li>
             </ul>
             <ul>
-              <h4>Salsa de mostaza:</h4>
-              <li><sup>1</sup><sub>2</sub> taza de aceite.</li>
-              <li>3 dientes de ajo triturados.</li>
-              <li>3 cucharadas de mostaza dijon.</li>
-              <li>2 cucharadas de vinagre de vino.</li>
-              <li>1 cucharada de miel.</li>
-              <li><sup>1</sup><sub>3</sub> de taza de hojas de menta.</li>
-              <li>Sal y pimienta.</li>
+              <h4>Para la salsa:</h4>
+              <li><sup>1</sup>/<sub>4</sub> de taza de mostaza dijon con semillas.</li>
+              <li><sup>1</sup>/<sub>4</sub> de taza de miel.</li>
+              <li>1 cucharada de vinagre de manzana.</li>
+              <li>1 cucharada de romero fresco.</li>
+              <li>2 cucharadas de aceite de oliva.</li>
+              <li><sup>1</sup>/<sub>4</sub> de cucharadita de sal.</li>
+              <li><sup>1</sup>/<sub>4</sub> de cucharadita de pimienta.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>511 kcal</li>
+              <li>357 kcal</li>
               <hr />
-              <li>29 de grasas</li>
+              <li>15 de grasas</li>
               <hr />
-              <li>52 de proteínas</li>
+              <li>36 de proteinas</li>
               <hr />
-              <li>11 hidratos de carbono</li>
+              <li>18 hidratos de carbono</li>
             </ul>
           </section>
         </section>
         <section class="preparacion">
           <h3>Preparación</h3>
           <ol>
+            <li>Sazona con la sal y la pimienta el pollo. Calienta una sartén gruesa, vierte aceite de oliva y deja calentar</li>
             <li>
-              Calienta en una sartén gruesa el aceite con los ajos, deja cocinar
-              hasta que suelten su aroma, retira del fuego.
+             Frie los muslos de pollo hasta que se doren y retira del fuego.
             </li>
             <li>
-              Unta el filete con un poco de este aceite por todas partes, sazona
-              con sal y pimienta. Reserva el resto del aceite para hacer la
-              salsa; para esto tienes que colocar la mostaza, el vinagre y la
-              miel en un procesador, muele y en forma de hilo ve añadiendo el
-              aceite con el ajo, muele hasta que todo esté combinado y sazona
-              con sal y pimienta.
+              En un tazón mezcla todos los ingredientes para la salsa hasta homogenizar.
             </li>
             <li>
-              Ahora calienta una sartén gruesa a fuego medio. Cocina el tocino y
-              fríe hasta que esté crujiente, retira de la sartén y reserva sobre
-              papel absorbente, retira la grasa sobrante de la sartén. Ahí
-              mismo, cocina el filete, fríe a fuego muy alto hasta que se selle
-              y se vea dorado, retira de la sartén.
+              Barniza el pollo dorado con esta salsa y coloca en un molde refractario.
             </li>
-            <li>
-              En la misma sartén coloca las rebanadas de ajo y dos cucharadas de
-              cebollita de cambray rebanada, cocina hasta que estén suaves,
-              agrega los chícharos y 2 cucharadas de agua, cocina por 5 minutos
-              y pasado este tiempo agrega los espárragos, sazona con sal y
-              pimienta y retira del fuego. Rebana el filete y coloca sobre los
-              espárragos y chícharos, barniza con la salsa y decora con el
-              cebollín sobrante y el tocino picado.
-            </li>
+            <li>Hornear por 20 minutos a 180&#176 C con el recipiente tapado con papel aluminio, pasado este tiempo, retira el papel aluminio y hornea por 10 minutos más.</li>
           </ol>
         </section>
       </section>

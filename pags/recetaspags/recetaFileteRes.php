@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Lomo de cerdo con champiñones</title>
+    <title>Filete de res con vegetales</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -52,21 +52,19 @@
             <li class="nav-item cosa">
               <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.php"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Lomo de cerdo con champiñones</h1>
+      <h1>Filete de res con vegetales</h1>
       <h4 class="enlaces-recetas">
         <a href="../recetaMenu.php">Recetas</a> >
-        <a href="#">Lomo de cerdo con champiñones</a>
+        <a href="#">Filete de res con vegetales</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
@@ -78,43 +76,50 @@
         </ul>
       </section>
       <img
-        src="../../recursos/imgs/recetasimgs/lomo-cerdo.jpg"
+        src="../../recursos/imgs/recetasimgs/res-esparragos.jpg"
         alt="tabla-vegetal"
       />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Lomo de cerdo con champiñones</h1>
+        <h1 id="nombreReceta">Filete de res con vegetales</h1>
         <p>
-          Alimento estrella: Los hongos mixtos son ricos en aminoácidos
-          necesarios para aumentar masa muscular, además son ricos en potasio y
-          magnesio que favorecen el sistema nervioso.
+          Los espárragos son ricos en antioxidantes, minerales y fibra que
+          favorecen el tránsito intestinal.
         </p>
 
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <li>1 kg de lomo de cerdo.</li>
-              <li>3 tazas de hongos mixtos.</li>
-              <li>1 cebolla rebanada.</li>
-              <li>2 tazas de consomé de res.</li>
+              <li>1 kg de filete de res en una pieza.</li>
+              <li>3 rebanadas de tocino de pavo, picado.</li>
+              <li>3 dientes de ajo rebanados delgados.</li>
+              <li>1 manojo de espárragos, cortados en trocitos.</li>
+              <li>1 taza de chícharos frescos.</li>
+              <li>4 cebollitas de cambray rebanadas.</li>
+              <li>Sal y pimienta para sazonar.</li>
+            </ul>
+            <ul>
+              <h4>Salsa de mostaza:</h4>
+              <li><sup>1</sup><sub>2</sub> taza de aceite.</li>
+              <li>3 dientes de ajo triturados.</li>
+              <li>3 cucharadas de mostaza dijon.</li>
+              <li>2 cucharadas de vinagre de vino.</li>
+              <li>1 cucharada de miel.</li>
+              <li><sup>1</sup><sub>3</sub> de taza de hojas de menta.</li>
               <li>Sal y pimienta.</li>
-              <li>1 ramita de tomillo.</li>
-              <li>1 taza de crema light.</li>
-              <li>3 cdas. de aceite de oliva.</li>
-              <li>1 cda. de aceite extra virgen.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>424 kcal</li>
+              <li>511 kcal</li>
               <hr />
-              <li>26 de grasas</li>
+              <li>29 de grasas</li>
               <hr />
-              <li>42 de proteínas</li>
+              <li>52 de proteínas</li>
               <hr />
-              <li>5 hidratos de carbono</li>
+              <li>11 hidratos de carbono</li>
             </ul>
           </section>
         </section>
@@ -122,32 +127,32 @@
           <h3>Preparación</h3>
           <ol>
             <li>
-              Limpia la carne, retirando toda la grasa que sea posible. Sazona
-              con sal y pimienta. Puedes envolver el lomo en hilo para cocinar o
-              de cáñamo para darle más firmeza y que no pierda su forma al
-              cocinar.
+              Calienta en una sartén gruesa el aceite con los ajos, deja cocinar
+              hasta que suelten su aroma, retira del fuego.
             </li>
             <li>
-              En una olla gruesa calienta aceite de Oliva, cuando esté muy
-              caliente, fríe la carne para sellar y quede el lomo dorado por
-              todos lados. Retira la carne de la olla y reserva.
+              Unta el filete con un poco de este aceite por todas partes, sazona
+              con sal y pimienta. Reserva el resto del aceite para hacer la
+              salsa; para esto tienes que colocar la mostaza, el vinagre y la
+              miel en un procesador, muele y en forma de hilo ve añadiendo el
+              aceite con el ajo, muele hasta que todo esté combinado y sazona
+              con sal y pimienta.
             </li>
             <li>
-              En la misma olla con el aceite, fríe la cebolla hasta que esté
-              transparente, añade los hongos y fríe por unos minutos.
+              Ahora calienta una sartén gruesa a fuego medio. Cocina el tocino y
+              fríe hasta que esté crujiente, retira de la sartén y reserva sobre
+              papel absorbente, retira la grasa sobrante de la sartén. Ahí
+              mismo, cocina el filete, fríe a fuego muy alto hasta que se selle
+              y se vea dorado, retira de la sartén.
             </li>
             <li>
-              Regresa el lomo a la olla. Agrega el caldo de res y el tomillo,
-              cocina hasta que la carne esté suave. Cuando esto suceda retira la
-              carne de la olla. Rebana y mantén caliente.
-            </li>
-            <li>
-              Licúa una taza de caldo de res donde se está cociendo el lomo con
-              la taza de crema y regresa a la olla, sigue cocinando 15 minutos
-              más. Justo para servir añade a la salsa una cucharada de  aceite extra Virgen.
-            </li>
-            <li>
-              Sirve la carne rebanada acompañada de la salsa de champiñones.
+              En la misma sartén coloca las rebanadas de ajo y dos cucharadas de
+              cebollita de cambray rebanada, cocina hasta que estén suaves,
+              agrega los chícharos y 2 cucharadas de agua, cocina por 5 minutos
+              y pasado este tiempo agrega los espárragos, sazona con sal y
+              pimienta y retira del fuego. Rebana el filete y coloca sobre los
+              espárragos y chícharos, barniza con la salsa y decora con el
+              cebollín sobrante y el tocino picado.
             </li>
           </ol>
         </section>

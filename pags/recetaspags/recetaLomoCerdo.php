@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Pollo a la mostaza</title>
+    <title>Lomo de cerdo con champiñones</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -52,96 +52,101 @@
             <li class="nav-item cosa">
               <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.php"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Pollo a la mostaza</h1>
+      <h1>Lomo de cerdo con champiñones</h1>
       <h4 class="enlaces-recetas">
         <a href="../recetaMenu.php">Recetas</a> >
-        <a href="#">Pollo a la mostaza</a>
+        <a href="#">Lomo de cerdo con champiñones</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
-          <li><i class="bi bi-alarm"></i>30 minutos</li>
+          <li><i class="bi bi-alarm"></i>60 minutos</li>
           <li id="descargarBtn">
             <i class="bi bi-cloud-arrow-down"></i>Descargar
           </li>
           <li id="imprimirBtn"><i class="bi bi-printer"></i>Imprimir</li>
         </ul>
       </section>
-      <img src="../../recursos/imgs/recetasimgs/Pollo-a-la-mostaza-2.jpg" alt="tabla-vegetal" />
+      <img
+        src="../../recursos/imgs/recetasimgs/lomo-cerdo.jpg"
+        alt="tabla-vegetal"
+      />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Pollo a la mostaza</h1>
+        <h1 id="nombreReceta">Lomo de cerdo con champiñones</h1>
         <p>
-          La miel es un excelente sustituto del azúcar, actúa como antioxidante,
-          es rico en vitaminas del complejo B y puede ayudar a reducir los
-          niveles del colesterol.
+          Alimento estrella: Los hongos mixtos son ricos en aminoácidos
+          necesarios para aumentar masa muscular, además son ricos en potasio y
+          magnesio que favorecen el sistema nervioso.
         </p>
 
-        <p>
-          Así mismo el consumo regular del pollo puede ayudar a mantener un plan
-          de alimentación saludable y benéfico para el organismo. Para encontrar
-          nuevas formas de prepararlo y desenvolverte en la cocina, te
-          presentamos esta receta de pollo a la mostaza que no te decepcionará.
-        </p>
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <h4>Ingredientes:</h4>
-              <li>
-                8 muslos de pollo sin piel.
-              </li>
-              <li><sup>1</sup>/<sub>4</sub> de cucharadita de sal.</li>
-              <li><sup>1</sup>/<sub>4</sub> de cucharadita de pimienta.</li>
-            </ul>
-            <ul>
-              <h4>Para la salsa:</h4>
-              <li><sup>1</sup>/<sub>4</sub> de taza de mostaza dijon con semillas.</li>
-              <li><sup>1</sup>/<sub>4</sub> de taza de miel.</li>
-              <li>1 cucharada de vinagre de manzana.</li>
-              <li>1 cucharada de romero fresco.</li>
-              <li>2 cucharadas de aceite de oliva.</li>
-              <li><sup>1</sup>/<sub>4</sub> de cucharadita de sal.</li>
-              <li><sup>1</sup>/<sub>4</sub> de cucharadita de pimienta.</li>
+              <li>1 kg de lomo de cerdo.</li>
+              <li>3 tazas de hongos mixtos.</li>
+              <li>1 cebolla rebanada.</li>
+              <li>2 tazas de consomé de res.</li>
+              <li>Sal y pimienta.</li>
+              <li>1 ramita de tomillo.</li>
+              <li>1 taza de crema light.</li>
+              <li>3 cdas. de aceite de oliva.</li>
+              <li>1 cda. de aceite extra virgen.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>357 kcal</li>
+              <li>424 kcal</li>
               <hr />
-              <li>15 de grasas</li>
+              <li>26 de grasas</li>
               <hr />
-              <li>36 de proteinas</li>
+              <li>42 de proteínas</li>
               <hr />
-              <li>18 hidratos de carbono</li>
+              <li>5 hidratos de carbono</li>
             </ul>
           </section>
         </section>
         <section class="preparacion">
           <h3>Preparación</h3>
           <ol>
-            <li>Sazona con la sal y la pimienta el pollo. Calienta una sartén gruesa, vierte aceite de oliva y deja calentar</li>
             <li>
-             Frie los muslos de pollo hasta que se doren y retira del fuego.
+              Limpia la carne, retirando toda la grasa que sea posible. Sazona
+              con sal y pimienta. Puedes envolver el lomo en hilo para cocinar o
+              de cáñamo para darle más firmeza y que no pierda su forma al
+              cocinar.
             </li>
             <li>
-              En un tazón mezcla todos los ingredientes para la salsa hasta homogenizar.
+              En una olla gruesa calienta aceite de Oliva, cuando esté muy
+              caliente, fríe la carne para sellar y quede el lomo dorado por
+              todos lados. Retira la carne de la olla y reserva.
             </li>
             <li>
-              Barniza el pollo dorado con esta salsa y coloca en un molde refractario.
+              En la misma olla con el aceite, fríe la cebolla hasta que esté
+              transparente, añade los hongos y fríe por unos minutos.
             </li>
-            <li>Hornear por 20 minutos a 180&#176 C con el recipiente tapado con papel aluminio, pasado este tiempo, retira el papel aluminio y hornea por 10 minutos más.</li>
+            <li>
+              Regresa el lomo a la olla. Agrega el caldo de res y el tomillo,
+              cocina hasta que la carne esté suave. Cuando esto suceda retira la
+              carne de la olla. Rebana y mantén caliente.
+            </li>
+            <li>
+              Licúa una taza de caldo de res donde se está cociendo el lomo con
+              la taza de crema y regresa a la olla, sigue cocinando 15 minutos
+              más. Justo para servir añade a la salsa una cucharada de  aceite extra Virgen.
+            </li>
+            <li>
+              Sirve la carne rebanada acompañada de la salsa de champiñones.
+            </li>
           </ol>
         </section>
       </section>

@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Ensalada caprese</title>
+    <title>Pizza pesto margarita</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -52,70 +52,84 @@
             <li class="nav-item cosa">
               <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.php"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Ensalada caprese</h1>
+      <h1>Pizza pesto margarita</h1>
       <h4 class="enlaces-recetas">
         <a href="../recetaMenu.php">Recetas</a> >
-        <a href="#">Ensalada caprese</a>
+        <a href="#">Pizza pesto margarita</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
-          <li><i class="bi bi-alarm"></i>20 minutos</li>
+          <li><i class="bi bi-alarm"></i>30 minutos</li>
           <li id="descargarBtn">
             <i class="bi bi-cloud-arrow-down"></i>Descargar
           </li>
           <li id="imprimirBtn"><i class="bi bi-printer"></i>Imprimir</li>
         </ul>
       </section>
-      <img
-        src="../../recursos/imgs/recetasimgs/receta-de-ensalada-caprese.jpg"
-        alt="tabla-vegetal"
-      />
+      <img src="../../recursos/imgs/recetasimgs/pizza-pesto-margarita.jpg" alt="tabla-vegetal" />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Ensalada caprese</h1>
+        <h1 id="nombreReceta">Pizza pesto margarita</h1>
         <p>
-          El jitomate es rico en vitamina A, potasio y licopeno, un antioxidante
-          que protege a las células de su envejecimiento, favoreciendo también
-          el cuidado de la piel.
+          Alimento estrella arúgula: La arúgula es rica en antioxidantes, fibra
+          que mejora la digestión, además de hierro y folatos que favorecen la
+          circulación.
+        </p>
+
+        <p>
+          Un delicioso platillo para tus comensales sin dejar de lado los
+          beneficios para su organismo.
         </p>
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <li>4 jitomates bola grandes.</li>
-              <li>1 pieza de queso mozzarella fresco (o 40 g por persona)</li>
-              <li>1 taza de hojas de albahaca fresca.</li>
-              <li>Sal al gusto.</li>
-              <li>Pimienta al gusto.</li>
+              <h4>Para la masa:</h4>
+              <li>250 g de harina</li>
+              <li>2 de levadura</li>
+              <li><sup>3</sup>/<sub>4</sub> de taza de agua.</li>
+              <li>3 cucharadas de aceite de oliva.</li>
+              <li>5 g de sal.</li>
             </ul>
-
             <ul>
-              <h4>Para el aderezo:</h4>
-              <li><sup>1</sup><sub>2</sub> de Aceite de Oliva Extra Virgen.</li>
-              <li><sup>1</sup><sub>4</sub> de taza de vinagre balsámico.</li>
+              <h4>Para el pesto:</h4>
+              <li>50 g de hojas de albahaca</li>
+              <li><sup>1</sup>/<sub>2</sub> de taza de aceite de oliva.</li>
+              <li><sup>1</sup>/<sub>2</sub> de taza de queso parmesano.</li>
+              <li>25 g de piñones tostados.</li>
+              <li>4 dientes de ajo.</li>
+              <li>1 pizca de sal de mar.</li>
+            </ul>
+            <ul>
+              <h4>Para el topping:</h4>
+              <li>200 g de queso mozzarella reducido en grasa.</li>
+              <li>1 jitomate bola rebanado.</li>
+              <li>4 tazas de arúgula.</li>
+              <li><sup>1</sup>/<sub>2</sub> taza de vinagre balsámico.</li>
+              <li><sup>1</sup>/<sub>2</sub> taza de aceite de oliva.</li>
+              <li>2 cdas. de crema de vinagre balsámico.</li>
+              <li>Sal y pimienta.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>145 kcal</li>
+              <li>539 kcal</li>
               <hr />
-              <li>10 de grasas</li>
+              <li>43 de grasas</li>
               <hr />
-              <li>10 de proteínas</li>
+              <li>15 de proteínas</li>
               <hr />
-              <li>5 hidratos de carbono</li>
+              <li>23 hidratos de carbono</li>
             </ul>
           </section>
         </section>
@@ -123,18 +137,31 @@
           <h3>Preparación</h3>
           <ol>
             <li>
-              Corta el jitomate, en rebanadas delgadas, entre 4 o 5 rebanadas de
-              cada jitomate. Corta el queso mozzarella en rebanadas delgadas.
-              Coloca los jitomates en el platón que hayas elegido para servir,
-              añade encina de cada rebanada de jitomate una rebanada de queso y
-              decora con una hoja de albahaca. Repite el proceso. Sazona con sal
-              y pimienta.
+              Mezcla los ingredientes para la masa en un tazón y deja reposar
+              por 2 horas. Pasado este tiempo mezcla y dejas reposar nuevamente.
+              Repite cada 2 horas de 3 a 4 veces el mismo procedimiento.
             </li>
             <li>
-              Mezcla el Aceite de Oliva Extra Virgen junto con
-              el vinagre balsámico en un pequeño recipiente. Baña esta mezcla
-              sobre la ensalada y sirve.
+              Divide la masa en dos partes, forma una bola con cada porción,
+              coloca en un tazón y barniza con aceite de oliva para que no se
+              pegue, cubre y refrigera toda la noche.
             </li>
+            <li>
+              Al día siguiente extiende la masa con las manos, estira y forma
+              las pizzas sobre las charolas para el horno.
+            </li>
+            <li>
+              Para hacer el pesto muele en un procesador la albahaca, el piñón,
+              el ajo, el queso parmesano y la sal. Vierte Oli de Nutrioli®
+              Aceite de Oliva en forma de hilo y poco a poco hasta quedar una
+              mezcla homogeneizada.
+            </li>
+            <li>
+              Unta las pizzas con el pesto, agrega el queso mozzarella, coloca
+              las rebanadas de jitomates sobre las pizzas, hornea a 220&#176; C
+              por 20 minutos y retira del horno.
+            </li>
+           <li>En un tazón mezcla la arúgula, el vinagre balsámico y aceite extra virgen, sazona con sal y pimienta. Agrega la crema de vinagre balsámico y finalmente la arúgula marinada. Sirve de inmediato.</li>
           </ol>
         </section>
       </section>
