@@ -30,23 +30,35 @@
               <a class="nav-link cosa activa" href="#">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="/pags/recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="pags/recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="pags/cuidate.html">Cuídate</a>
+              <a class="nav-link" href="pags/cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="pags/padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="pags/padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="pags/imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link" href="pags/imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="pags/perfil.html">Perfil</a>
+              <a class="nav-link" href="pags/perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="pags/loginRegistro.html">Registrate/Iniciar Sesión</a>
-            </li>
+              <?php
+              session_start();
+              error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
+              if ($_SESSION["autentificado"]) {
+                  echo "<li class=\"nav-item cosa\">
+                  <a class=\"nav-link\" href=\"backendcodigo/salir.php\">Cerrar sesión</a>
+              </li>";
+              }
+
+              if (!isset($_SESSION["autentificado"])) {
+                  echo "<li class=\"nav-item cosa\">
+              <a class=\"nav-link\" href=\"pags/loginRegistro.php\">Registrate/Iniciar Sesión</a>
+            </li>";
+              }
+              ?>
           </ul>
         </div>
       </div>
@@ -79,7 +91,7 @@
         </section>
 
         <section class="sec-article-img consultar">
-            <img src="/recursos/imgs/index-imgs/tomando-talla.jpg" alt="">
+            <img src="recursos/imgs/index-imgs/tomando-talla.jpg" alt="">
             <article>
                 <p>¿Cuándo debes consultar con un médico?</p>
                 <p>Si te preocupan los problemas de salud relacionados con el peso, pregunta al médico sobre el control de la obesidad. Con tu médico, podrán evaluar los riesgos para tu salud y analizar tus opciones para bajar de peso.</p>
@@ -91,7 +103,7 @@
                 <p>Calidad de vida</p>
                 <p>La obesidad puede disminuir tu calidad de vida en general. Es posible que no puedas hacer cosas que hacías antes, como participar en actividades placenteras. Tal vez evites los lugares públicos. Las personas con obesidad pueden incluso sufrir discriminación.</p>
             </article>
-            <img src="/recursos/imgs/index-imgs/calidad-vida.jpg" alt="">
+            <img src="recursos/imgs/index-imgs/calidad-vida.jpg" alt="">
         </section>
 
         <section class="tercero">
@@ -200,7 +212,7 @@
     </footer>
     <!-- Footer -->
 
-    <script src="/scripts/botonArriba.js"></script>
+    <script src="scripts/botonArriba.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
