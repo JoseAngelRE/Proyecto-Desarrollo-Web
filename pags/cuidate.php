@@ -1,3 +1,4 @@
+<?php include("../backendcodigo/sesion.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,32 +15,32 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a href="../index.html" class="navbar-brand"><h1>I-M-C-uídate</h1></a>
+            <a href="../index.php" class="navbar-brand"><h1>I-M-C-uídate</h1></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item">
-                        <a class="nav-link cosa" href="../index.html">HOME</a>
+                        <a class="nav-link cosa" href="../index.php">HOME</a>
                     </li>
                     <li class="nav-item cosa">
-                      <a class="nav-link" href="recetaMenu.html">Recetas</a>
+                      <a class="nav-link" href="recetaMenu.php">Recetas</a>
                   </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link activa" href="cuidate.html">Cuídate</a>
+                        <a class="nav-link activa" href="cuidate.php">Cuídate</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="padecimientos.html">Padecimientos</a>
+                        <a class="nav-link" href="padecimientos.php">Padecimientos</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="imcPagina.html">Calcula tu IMC</a>
+                        <a class="nav-link" href="imcPagina.php">Calcula tu IMC</a>
                     </li>
                     <li class="nav-item cosa"> 
-                        <a class="nav-link" href="perfil.html">Perfil</a>
+                        <a class="nav-link" href="perfil.php">Perfil</a>
                     </li>
                     <li class="nav-item cosa"> 
-                        <a class="nav-link" href="loginRegistro.html">Registrate/Iniciar Sesión</a>
+                        <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
@@ -61,12 +62,12 @@
                 </ul>
             </div>
             <div class="info-der1">
-                <img src="/recursos/imgs/frutas1.jpg" alt="frutas1">
+                <img src="../recursos/imgs/frutas1.jpg" alt="frutas1">
             </div>
         </section>
         <section class="parte der">
             <div class="cuadro-izq">
-                <img src="/recursos/imgs/ejercicio1 (1).jpg" alt="frutas1">
+                <img src="../recursos/imgs/ejercicio1 (1).jpg" alt="frutas1">
             </div>
             <div class="info-der2">
                 <ul class="fa-ul">
@@ -166,7 +167,7 @@
         <i class="fas fa-chevron-up"></i>
     </div>
 
-    <script src="/scripts/botonArriba.js"></script>
+    <script src="../scripts/botonArriba.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
