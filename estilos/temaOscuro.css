@@ -6,8 +6,8 @@
     /* --87: #CFD6E0;   */
     --87: #CCD3D9;  
     --54: #8c8c8c8c; 
-    --26: #DE6025; 
-    --12: #1D7874;    
+    --26: gray; 
+    --12: black;    
 }
 
 
@@ -59,7 +59,7 @@ footer {
 #button-up {
     width: 60px;
     height: 60px;
-    background: #fc4d2e    ;
+    background: black  ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,22 +81,17 @@ footer {
 }
 
 .button{
-    background-color: #1c6d69; /* Green */
+    background-color: black;
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 8px;
-    border: 2px solid black;
+    border: 2px solid white;
     font-weight: bold;
    
   }
 
+ 
 /*De aquí para abajo eliminar*/
 /*El <MAIN> es el contenedor principal de cada página*/
-
-
-
-
-
-
