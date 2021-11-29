@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
+session_start();
+$_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
+include("../backendcodigo/sesion.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +14,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/estilos/main.css">
-    <link rel="stylesheet" href="/estilos/estiloPadecimiento.css">
-    <script src="/scripts/scriptPadecimiento.js"></script>
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/estiloPadecimiento.css">
+    <script src="../scripts/scriptPadecimiento.js"></script>
 
 
 </head>
@@ -28,25 +33,25 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item">
-                        <a class="nav-link cosa" href="../index.html">HOME</a>
+                        <a class="nav-link cosa" href="../index.php">HOME</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="recetaMenu.html">Recetas</a>
+                        <a class="nav-link" href="recetaMenu.php">Recetas</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="cuidate.html">Cuídate</a>
+                        <a class="nav-link" href="cuidate.php">Cuídate</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link activa" href="padecimientos.html">Padecimientos</a>
+                        <a class="nav-link activa" href="padecimientos.php">Padecimientos</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="imcPagina.html">Calcula tu IMC</a>
+                        <a class="nav-link" href="imcPagina.php">Calcula tu IMC</a>
                     </li>
                     <li class="nav-item cosa"> 
-                        <a class="nav-link" href="perfil.html">Perfil</a>
+                        <a class="nav-link" href="perfil.php">Perfil</a>
                     </li>
-                    <li class="nav-item cosa"> 
-                        <a class="nav-link" href="loginRegistro.html">Registrate/Iniciar Sesión</a>
+                    <li class="nav-item cosa">
+                        <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
@@ -60,22 +65,22 @@
                 Quien padece sufre algo nocivo o desventajoso en su cuerpo.</h3>
 
             <div class="flex-container" id="flex-container">
-                <div id="1" onclick="desplegarObesidad(this)"><img src="/recursos/imgs/imgsPadecimientos/1.jpg">
+                <div id="1" onclick="desplegarObesidad(this)"><img src="../recursos/imgs/imgsPadecimientos/1.jpg">
                     <p>Sobrepeso y Obesidad</p>
                 </div>
-                <div id="2"  onclick="desplegarGota()"><img src="/recursos/imgs/imgsPadecimientos/2.jpg">
+                <div id="2"  onclick="desplegarGota()"><img src="../recursos/imgs/imgsPadecimientos/2.jpg">
                     <p>Gota</p>
                 </div>
-                <div id="3"  onclick="desplegarHipertension()"><img src="/recursos/imgs/imgsPadecimientos/3.jpg">
+                <div id="3"  onclick="desplegarHipertension()"><img src="../recursos/imgs/imgsPadecimientos/3.jpg">
                     <p>Hipertensión</p>
                 </div>
-                <div id="4" onclick="desplegarDiabetes()"><img src="/recursos/imgs/imgsPadecimientos/4.jpg">
+                <div id="4" onclick="desplegarDiabetes()"><img src="../recursos/imgs/imgsPadecimientos/4.jpg">
                     <p>Diabetes</p>
                 </div>
-                <div id="5" onclick="desplegarCardio()"><img src="/recursos/imgs/imgsPadecimientos/5.jpg">
+                <div id="5" onclick="desplegarCardio()"><img src="../recursos/imgs/imgsPadecimientos/5.jpg">
                     <p>Enfermedades Cardiovasculares</p>
                 </div>
-                <div id="6"  onclick="desplegarAnemia()"><img src="/recursos/imgs/imgsPadecimientos/6.jpg">
+                <div id="6"  onclick="desplegarAnemia()"><img src="../recursos/imgs/imgsPadecimientos/6.jpg">
                     <p>Anemia</p>
                 </div>
             </div>
@@ -83,7 +88,7 @@
         <section id="fichaHipertension" style="display: none;">
             <div class="contenedorFicha">
                 <h1 class="tituloTabla">Hipertensión arterial</h1>
-                <img src="/recursos/imgs/imgsPadecimientos/hipertension.jpg">
+                <img src="../recursos/imgs/imgsPadecimientos/hipertension.jpg">
                 <table class="tablaFicha">
                     <tr>
                         <td><b>Definición</b></td>
@@ -112,7 +117,7 @@
         <section id="fichaDiabetes" style="display: none;">
             <div class="contenedorFicha">
                 <h1 class="tituloTabla">Diabetes Mellitus</h1>
-                <img src="/recursos/imgs/imgsPadecimientos/diabetes.jpg">
+                <img src="../recursos/imgs/imgsPadecimientos/diabetes.jpg">
                 <table class="tablaFicha">
                     <tr>
                         <td><b>Definición</b></td>
@@ -140,7 +145,7 @@
         <section id="fichaGota"style="display: none;">
             <div class="contenedorFicha">
                 <h1 class="tituloTabla">Gota</h1>
-                <img src="/recursos/imgs/imgsPadecimientos/gota.png">
+                <img src="../recursos/imgs/imgsPadecimientos/gota.png">
                 <table class="tablaFicha">
                     <tr>
                         <td><b>Definición</b></td>
@@ -172,7 +177,7 @@
         <section id="fichaAnemia"style="display: none;">
             <div class="contenedorFicha">
                 <h1 class="tituloTabla">Anemia</h1>
-                <img src="/recursos/imgs/imgsPadecimientos/anemia.jpg">
+                <img src="../recursos/imgs/imgsPadecimientos/anemia.jpg">
                 <table class="tablaFicha">
                     <tr>
                         <td><b>Definición</b></td>
@@ -201,7 +206,7 @@
         <section id="fichaCardio"style="display: none;">
             <div class="contenedorFicha">
                 <h1 class="tituloTabla">Enfermedades Cardiovasculares</h1>
-                <img src="/recursos/imgs/imgsPadecimientos/cardio.jpg">
+                <img src="../recursos/imgs/imgsPadecimientos/cardio.jpg">
                 <table class="tablaFicha">
                     <tr>
                         <td><b>Definición</b></td>
@@ -225,7 +230,7 @@
         <section id="fichaObesidad"style="display: none;" >
             <div class="contenedorFicha">
                 <h1 class="tituloTabla">Sobrepeso y Obesidad</h1>
-                <img src="/recursos/imgs/imgsPadecimientos/obesidad.jpg">
+                <img src="../recursos/imgs/imgsPadecimientos/obesidad.jpg">
                 <table class="tablaFicha">
                     <tr>
                         <td><b>Definición</b></td>
@@ -328,7 +333,7 @@
         <i class="fas fa-chevron-up"></i>
     </div>
 
-    <script src="/scripts/botonArriba.js"></script>
+    <script src="../scripts/botonArriba.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>

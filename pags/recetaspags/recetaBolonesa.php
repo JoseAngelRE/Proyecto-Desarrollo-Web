@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Ensalada caprese</title>
+    <title>Espagueti a la boloñesa</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -35,42 +35,40 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link cosa" href="../../index.html">HOME</a>
+              <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="../recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../cuidate.html">Cuídate</a>
+              <a class="nav-link" href="../cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="../padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link" href="../imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../perfil.html">Perfil</a>
+              <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.html"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Ensalada caprese</h1>
+      <h1>Espagueti a la boloñesa</h1>
       <h4 class="enlaces-recetas">
-        <a href="../recetaMenu.html">Recetas</a> >
-        <a href="#">Ensalada caprese</a>
+        <a href="../recetaMenu.php">Recetas</a> >
+        <a href="#">Espagueti a la boloñesa</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
-          <li><i class="bi bi-alarm"></i>20 minutos</li>
+          <li><i class="bi bi-alarm"></i>50 minutos</li>
           <li id="descargarBtn">
             <i class="bi bi-cloud-arrow-down"></i>Descargar
           </li>
@@ -78,44 +76,62 @@
         </ul>
       </section>
       <img
-        src="../../recursos/imgs/recetasimgs/receta-de-ensalada-caprese.jpg"
+        src="../../recursos/imgs/recetasimgs/espagueti-bolonesa.jpg"
         alt="tabla-vegetal"
       />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Ensalada caprese</h1>
+        <h1 id="nombreReceta">Espagueti a la boloñesa</h1>
         <p>
-          El jitomate es rico en vitamina A, potasio y licopeno, un antioxidante
-          que protege a las células de su envejecimiento, favoreciendo también
-          el cuidado de la piel.
+          Las hierbas aromáticas brindan un toque de sabor, pero además aportan
+          aceites esenciales que contienen polifenoles, atioxidantes benéficos
+          para la salud.
         </p>
+
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <li>4 jitomates bola grandes.</li>
-              <li>1 pieza de queso mozzarella fresco (o 40 g por persona)</li>
-              <li>1 taza de hojas de albahaca fresca.</li>
+              <h4>Para la pasta:</h4>
+              <li>400 g de pasta espagueti.</li>
+              <li>1 trozo de cebolla.</li>
+              <li>1L de agua hirviendo.</li>
               <li>Sal al gusto.</li>
-              <li>Pimienta al gusto.</li>
             </ul>
-
             <ul>
-              <h4>Para el aderezo:</h4>
-              <li><sup>1</sup><sub>2</sub> de Aceite de Oliva Extra Virgen.</li>
-              <li><sup>1</sup><sub>4</sub> de taza de vinagre balsámico.</li>
+              <h4>Para la salsa:</h4>
+              <li>1 cebolla pequeña, picada.</li>
+              <li>2 dientes de ajo, picados.</li>
+              <li>1 zanahoria, pelada y cortada en cubitos muy pequeños.</li>
+              <li>2 tallos de apio, picado.</li>
+              <li>2 cucharadas de aceite de oliva.</li>
+              <li>1 taza de puré de tomate.</li>
+              <li>6 jitomates.</li>
+              <li>2 cucharaditas de tomillo molido.</li>
+              <li>1 cucharadita de mejorana seca.</li>
+              <li><sup>1</sup><sub>2</sub> cucharadita de orégano seco.</li>
+              <li>Sal y pimienta.</li>
+            </ul>
+            <ul>
+              <h4>Para las albóndigas:</h4>
+              <li>300 g de carne de res molida.</li>
+              <li>1 diente de ajo, triturado.</li>
+              <li><sup>1</sup><sub>4</sub> de taza de prejil, picado.</li>
+              <li>1 clara de huevo.</li>
+              <li>2 cucharadas de aceite de oliva extra virgen.</li>
+              <li>Sal y pimienta al gusto.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>145 kcal</li>
+              <li>638 kcal</li>
               <hr />
-              <li>10 de grasas</li>
+              <li>27 de grasas</li>
               <hr />
-              <li>10 de proteínas</li>
+              <li>30 de proteínas</li>
               <hr />
-              <li>5 hidratos de carbono</li>
+              <li>74 hidratos de carbono</li>
             </ul>
           </section>
         </section>
@@ -123,17 +139,38 @@
           <h3>Preparación</h3>
           <ol>
             <li>
-              Corta el jitomate, en rebanadas delgadas, entre 4 o 5 rebanadas de
-              cada jitomate. Corta el queso mozzarella en rebanadas delgadas.
-              Coloca los jitomates en el platón que hayas elegido para servir,
-              añade encina de cada rebanada de jitomate una rebanada de queso y
-              decora con una hoja de albahaca. Repite el proceso. Sazona con sal
-              y pimienta.
+              Para la salsa asa los jitomates hasta que la piel esté dorada,
+              cuando esto suceda retira del fuego y quita la piel, licúa sin
+              agua hasta obtener un puré.
             </li>
             <li>
-              Mezcla el Aceite de Oliva Extra Virgen junto con
-              el vinagre balsámico en un pequeño recipiente. Baña esta mezcla
-              sobre la ensalada y sirve.
+              En una sartén calienta Aceite de Oliva y acitrona la cebolla,
+              cuando ya esté transparente agrega el ajo, la zanahoria y el apio;
+              cocina 10 minutos moviendo constantemente.
+            </li>
+            <li>
+              Añade el jitomate molido y colado, sigue cocinando a fuego medio
+              10 minutos más. Agrega las 2 tazas de puré de tomate y sazona con
+              el tomillo, el orégano, la mejorana y salpimenta. Baja el fuego y
+              cocina 10 minutos más.
+            </li>
+            <li>
+              Para las albóndigas, coloca la carne en un tazón, añade el
+              perejil, la clara de huevo, el ajo y sazona con sal y pimienta,
+              revuelve la carne; con las manos húmedas forma las albóndigas,
+              calienta en una sartén la cucharada de Aceite de Oliva y fríe las
+              albóndigas por tandas hasta que estén bien doradas por todas
+              partes, añade a la salsa de jitomate y cocina unos minutos más.
+            </li>
+            <li>
+              Calienta el agua hasta que hierva, con sal, un trozo de cebolla y
+              un poquito de aceite, añade el espagueti y deja cocer hasta que
+              esté al dente. Sirve la pasta caliente con la salsa y las
+              albóndigas sobre ella.
+            </li>
+            <li>
+              Al momento de servir rocía cada plato con media cucharadita de
+              Aceite de Oliva Extra Virgen.
             </li>
           </ol>
         </section>

@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Lomo de cerdo con champiñones</title>
+    <title>Tostadas de champiñones</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -35,42 +35,40 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link cosa" href="../../index.html">HOME</a>
+              <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="../recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../cuidate.html">Cuídate</a>
+              <a class="nav-link" href="../cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="../padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link" href="../imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../perfil.html">Perfil</a>
+              <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.html"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Lomo de cerdo con champiñones</h1>
+      <h1>Tostadas de champiñones</h1>
       <h4 class="enlaces-recetas">
-        <a href="../recetaMenu.html">Recetas</a> >
-        <a href="#">Lomo de cerdo con champiñones</a>
+        <a href="../recetaMenu.php">Recetas</a> >
+        <a href="#">Tostadas de champiñones</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
-          <li><i class="bi bi-alarm"></i>60 minutos</li>
+          <li><i class="bi bi-alarm"></i>30 minutos</li>
           <li id="descargarBtn">
             <i class="bi bi-cloud-arrow-down"></i>Descargar
           </li>
@@ -78,43 +76,33 @@
         </ul>
       </section>
       <img
-        src="../../recursos/imgs/recetasimgs/lomo-cerdo.jpg"
+        src="../../recursos/imgs/recetasimgs/Tostadas-de-champinones_1.jpg"
         alt="tabla-vegetal"
       />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Lomo de cerdo con champiñones</h1>
-        <p>
-          Alimento estrella: Los hongos mixtos son ricos en aminoácidos
-          necesarios para aumentar masa muscular, además son ricos en potasio y
-          magnesio que favorecen el sistema nervioso.
-        </p>
-
+        <h1 id="nombreReceta">Tostadas de champiñones</h1>
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <li>1 kg de lomo de cerdo.</li>
-              <li>3 tazas de hongos mixtos.</li>
-              <li>1 cebolla rebanada.</li>
-              <li>2 tazas de consomé de res.</li>
-              <li>Sal y pimienta.</li>
-              <li>1 ramita de tomillo.</li>
-              <li>1 taza de crema light.</li>
-              <li>3 cdas. de aceite de oliva.</li>
-              <li>1 cda. de aceite extra virgen.</li>
+              <li>4 tazas de champiñones rebanados.</li>
+              <li>3 cucharadas de ajo finamente picado.</li>
+              <li>1 chile guajillo, sin semillas.</li>
+              <li>2 cucharadas de aceite de oliva.</li>
+              <li>8 tostadas de maíz deshidratadas.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>424 kcal</li>
+              <li>36 kcal</li>
               <hr />
-              <li>26 de grasas</li>
+              <li>1 de grasas</li>
               <hr />
-              <li>42 de proteínas</li>
+              <li>3 de proteínas</li>
               <hr />
-              <li>5 hidratos de carbono</li>
+              <li>6 hidratos de carbono</li>
             </ul>
           </section>
         </section>
@@ -122,33 +110,15 @@
           <h3>Preparación</h3>
           <ol>
             <li>
-              Limpia la carne, retirando toda la grasa que sea posible. Sazona
-              con sal y pimienta. Puedes envolver el lomo en hilo para cocinar o
-              de cáñamo para darle más firmeza y que no pierda su forma al
-              cocinar.
+              Quita el rabo del chile y retira las semillas. Corta en tiras
+              delgadas con un cuchillo o tijeras.
             </li>
             <li>
-              En una olla gruesa calienta aceite de Oliva, cuando esté muy
-              caliente, fríe la carne para sellar y quede el lomo dorado por
-              todos lados. Retira la carne de la olla y reserva.
+              Esparce 2 cucharadas de acite de oliva en una sartén, agrega el ajo picado y fríe unos segundos.
             </li>
-            <li>
-              En la misma olla con el aceite, fríe la cebolla hasta que esté
-              transparente, añade los hongos y fríe por unos minutos.
-            </li>
-            <li>
-              Regresa el lomo a la olla. Agrega el caldo de res y el tomillo,
-              cocina hasta que la carne esté suave. Cuando esto suceda retira la
-              carne de la olla. Rebana y mantén caliente.
-            </li>
-            <li>
-              Licúa una taza de caldo de res donde se está cociendo el lomo con
-              la taza de crema y regresa a la olla, sigue cocinando 15 minutos
-              más. Justo para servir añade a la salsa una cucharada de  aceite extra Virgen.
-            </li>
-            <li>
-              Sirve la carne rebanada acompañada de la salsa de champiñones.
-            </li>
+            <li>Agrega los champiñones rebanados y el chile guajillo en tiritas.</li>
+            <li>Cocina de 4 a 5 minutos o hasta que los champiñones se hayan suavizado.</li>
+            <li>Sazona al gusto con sal y pimienta, sirve sobre las tostadas.</li>
           </ol>
         </section>
       </section>

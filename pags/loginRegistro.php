@@ -34,25 +34,25 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link cosa" href="../index.html">HOME</a>
+              <a class="nav-link cosa" href="../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="cuidate.html">Cuídate</a>
+              <a class="nav-link" href="cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link" href="imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa"> 
-              <a class="nav-link" href="perfil.html">Perfil</a>
+              <a class="nav-link" href="perfil.php">Perfil</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link activa" href="loginRegistro.html"
+              <a class="nav-link activa" href="loginRegistro.php"
                 >Registrate/Iniciar Sesión</a
               >
             </li>
@@ -70,7 +70,7 @@
         <div class="slider-tab"></div>
       </section>
       <section class="contenedor-form">
-        <form class="form" id="iniciarSesion">
+        <form class="form" id="iniciarSesion" method="post" action="../backendcodigo/control.php" enctype="application/x-www-form-urlencoded">
           <h2>Inicia sesión</h2>
 
           <section class="campo-formulario">
@@ -92,12 +92,12 @@
             />
             <small>Mensaje error</small>
           </section>
-          <input type="submit" class="btnForm" value="Iniciar sesión" />
+          <input type="submit" class="btnForm" id="btnIniciarLogin"value="Iniciar sesión" />
           <section class="form-link" id="linkRegistrar">
             No estas registrado? <a href="">Registrate</a>
           </section>
         </form>
-        <form class="form form-hidden" id="registrar">
+        <form class="form form-hidden" id="registrar" method="post" action="../backendcodigo/nuevo.php" enctype="application/x-www-form-urlencoded">
           <h2>Crea una cuenta</h2>
           <section class="campo-formulario">
             <input
@@ -137,7 +137,7 @@
             />
             <small>Mensaje error</small>
           </section>
-          <input type="submit" class="btnForm" value="Registrarte" />
+          <input type="button" class="btnForm" id="btnIniciarRegistro"value="Registrarte" />
           <section class="form-link" id="linkLogin">
             Ya tienes una cuenta? <a href="">Inicia sesión</a>
           </section>
@@ -225,7 +225,7 @@
   <div id="button-up">
       <i class="fas fa-chevron-up"></i>
   </div>
-  <script src="/scripts/botonArriba.js"></script>
+  <script src="../scripts/botonArriba.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

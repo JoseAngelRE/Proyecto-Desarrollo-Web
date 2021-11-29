@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Espagueti a la boloñesa</title>
+    <title>Filete de res con vegetales</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -35,42 +35,40 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link cosa" href="../../index.html">HOME</a>
+              <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="../recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../cuidate.html">Cuídate</a>
+              <a class="nav-link" href="../cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="../padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link" href="../imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../perfil.html">Perfil</a>
+              <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.html"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Espagueti a la boloñesa</h1>
+      <h1>Filete de res con vegetales</h1>
       <h4 class="enlaces-recetas">
-        <a href="../recetaMenu.html">Recetas</a> >
-        <a href="#">Espagueti a la boloñesa</a>
+        <a href="../recetaMenu.php">Recetas</a> >
+        <a href="#">Filete de res con vegetales</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
-          <li><i class="bi bi-alarm"></i>50 minutos</li>
+          <li><i class="bi bi-alarm"></i>60 minutos</li>
           <li id="descargarBtn">
             <i class="bi bi-cloud-arrow-down"></i>Descargar
           </li>
@@ -78,62 +76,50 @@
         </ul>
       </section>
       <img
-        src="../../recursos/imgs/recetasimgs/espagueti-bolonesa.jpg"
+        src="../../recursos/imgs/recetasimgs/res-esparragos.jpg"
         alt="tabla-vegetal"
       />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Espagueti a la boloñesa</h1>
+        <h1 id="nombreReceta">Filete de res con vegetales</h1>
         <p>
-          Las hierbas aromáticas brindan un toque de sabor, pero además aportan
-          aceites esenciales que contienen polifenoles, atioxidantes benéficos
-          para la salud.
+          Los espárragos son ricos en antioxidantes, minerales y fibra que
+          favorecen el tránsito intestinal.
         </p>
 
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <h4>Para la pasta:</h4>
-              <li>400 g de pasta espagueti.</li>
-              <li>1 trozo de cebolla.</li>
-              <li>1L de agua hirviendo.</li>
-              <li>Sal al gusto.</li>
+              <li>1 kg de filete de res en una pieza.</li>
+              <li>3 rebanadas de tocino de pavo, picado.</li>
+              <li>3 dientes de ajo rebanados delgados.</li>
+              <li>1 manojo de espárragos, cortados en trocitos.</li>
+              <li>1 taza de chícharos frescos.</li>
+              <li>4 cebollitas de cambray rebanadas.</li>
+              <li>Sal y pimienta para sazonar.</li>
             </ul>
             <ul>
-              <h4>Para la salsa:</h4>
-              <li>1 cebolla pequeña, picada.</li>
-              <li>2 dientes de ajo, picados.</li>
-              <li>1 zanahoria, pelada y cortada en cubitos muy pequeños.</li>
-              <li>2 tallos de apio, picado.</li>
-              <li>2 cucharadas de aceite de oliva.</li>
-              <li>1 taza de puré de tomate.</li>
-              <li>6 jitomates.</li>
-              <li>2 cucharaditas de tomillo molido.</li>
-              <li>1 cucharadita de mejorana seca.</li>
-              <li><sup>1</sup><sub>2</sub> cucharadita de orégano seco.</li>
+              <h4>Salsa de mostaza:</h4>
+              <li><sup>1</sup><sub>2</sub> taza de aceite.</li>
+              <li>3 dientes de ajo triturados.</li>
+              <li>3 cucharadas de mostaza dijon.</li>
+              <li>2 cucharadas de vinagre de vino.</li>
+              <li>1 cucharada de miel.</li>
+              <li><sup>1</sup><sub>3</sub> de taza de hojas de menta.</li>
               <li>Sal y pimienta.</li>
-            </ul>
-            <ul>
-              <h4>Para las albóndigas:</h4>
-              <li>300 g de carne de res molida.</li>
-              <li>1 diente de ajo, triturado.</li>
-              <li><sup>1</sup><sub>4</sub> de taza de prejil, picado.</li>
-              <li>1 clara de huevo.</li>
-              <li>2 cucharadas de aceite de oliva extra virgen.</li>
-              <li>Sal y pimienta al gusto.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>638 kcal</li>
+              <li>511 kcal</li>
               <hr />
-              <li>27 de grasas</li>
+              <li>29 de grasas</li>
               <hr />
-              <li>30 de proteínas</li>
+              <li>52 de proteínas</li>
               <hr />
-              <li>74 hidratos de carbono</li>
+              <li>11 hidratos de carbono</li>
             </ul>
           </section>
         </section>
@@ -141,38 +127,32 @@
           <h3>Preparación</h3>
           <ol>
             <li>
-              Para la salsa asa los jitomates hasta que la piel esté dorada,
-              cuando esto suceda retira del fuego y quita la piel, licúa sin
-              agua hasta obtener un puré.
+              Calienta en una sartén gruesa el aceite con los ajos, deja cocinar
+              hasta que suelten su aroma, retira del fuego.
             </li>
             <li>
-              En una sartén calienta Aceite de Oliva y acitrona la cebolla,
-              cuando ya esté transparente agrega el ajo, la zanahoria y el apio;
-              cocina 10 minutos moviendo constantemente.
+              Unta el filete con un poco de este aceite por todas partes, sazona
+              con sal y pimienta. Reserva el resto del aceite para hacer la
+              salsa; para esto tienes que colocar la mostaza, el vinagre y la
+              miel en un procesador, muele y en forma de hilo ve añadiendo el
+              aceite con el ajo, muele hasta que todo esté combinado y sazona
+              con sal y pimienta.
             </li>
             <li>
-              Añade el jitomate molido y colado, sigue cocinando a fuego medio
-              10 minutos más. Agrega las 2 tazas de puré de tomate y sazona con
-              el tomillo, el orégano, la mejorana y salpimenta. Baja el fuego y
-              cocina 10 minutos más.
+              Ahora calienta una sartén gruesa a fuego medio. Cocina el tocino y
+              fríe hasta que esté crujiente, retira de la sartén y reserva sobre
+              papel absorbente, retira la grasa sobrante de la sartén. Ahí
+              mismo, cocina el filete, fríe a fuego muy alto hasta que se selle
+              y se vea dorado, retira de la sartén.
             </li>
             <li>
-              Para las albóndigas, coloca la carne en un tazón, añade el
-              perejil, la clara de huevo, el ajo y sazona con sal y pimienta,
-              revuelve la carne; con las manos húmedas forma las albóndigas,
-              calienta en una sartén la cucharada de Aceite de Oliva y fríe las
-              albóndigas por tandas hasta que estén bien doradas por todas
-              partes, añade a la salsa de jitomate y cocina unos minutos más.
-            </li>
-            <li>
-              Calienta el agua hasta que hierva, con sal, un trozo de cebolla y
-              un poquito de aceite, añade el espagueti y deja cocer hasta que
-              esté al dente. Sirve la pasta caliente con la salsa y las
-              albóndigas sobre ella.
-            </li>
-            <li>
-              Al momento de servir rocía cada plato con media cucharadita de
-              Aceite de Oliva Extra Virgen.
+              En la misma sartén coloca las rebanadas de ajo y dos cucharadas de
+              cebollita de cambray rebanada, cocina hasta que estén suaves,
+              agrega los chícharos y 2 cucharadas de agua, cocina por 5 minutos
+              y pasado este tiempo agrega los espárragos, sazona con sal y
+              pimienta y retira del fuego. Rebana el filete y coloca sobre los
+              espárragos y chícharos, barniza con la salsa y decora con el
+              cebollín sobrante y el tocino picado.
             </li>
           </ol>
         </section>

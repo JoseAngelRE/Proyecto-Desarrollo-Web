@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Pizza pesto margarita</title>
+    <title>Pollo con vegetales a la parrilla</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -35,135 +35,115 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link cosa" href="../../index.html">HOME</a>
+              <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="../recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../cuidate.html">Cuídate</a>
+              <a class="nav-link" href="../cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="../padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link" href="../imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../perfil.html">Perfil</a>
+              <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.html"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Pizza pesto margarita</h1>
+      <h1>Pollo con vegetales a la parrilla</h1>
       <h4 class="enlaces-recetas">
-        <a href="../recetaMenu.html">Recetas</a> >
-        <a href="#">Pizza pesto margarita</a>
+        <a href="../recetaMenu.php">Recetas</a> >
+        <a href="#">Pollo con vegetales a la parrilla</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
-          <li><i class="bi bi-alarm"></i>30 minutos</li>
+          <li><i class="bi bi-alarm"></i>35 minutos</li>
           <li id="descargarBtn">
             <i class="bi bi-cloud-arrow-down"></i>Descargar
           </li>
           <li id="imprimirBtn"><i class="bi bi-printer"></i>Imprimir</li>
         </ul>
       </section>
-      <img src="../../recursos/imgs/recetasimgs/pizza-pesto-margarita.jpg" alt="tabla-vegetal" />
+      <img
+        src="../../recursos/imgs/recetasimgs/pollo-vegetales.jpg"
+        alt="tabla-vegetal"
+      />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Pizza pesto margarita</h1>
-        <p>
-          Alimento estrella arúgula: La arúgula es rica en antioxidantes, fibra
-          que mejora la digestión, además de hierro y folatos que favorecen la
-          circulación.
-        </p>
-
-        <p>
-          Un delicioso platillo para tus comensales sin dejar de lado los
-          beneficios para su organismo.
-        </p>
+        <h1 id="nombreReceta">Pollo con vegetales a la parrilla</h1>
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <h4>Para la masa:</h4>
-              <li>250 g de harina</li>
-              <li>2 de levadura</li>
-              <li><sup>3</sup>/<sub>4</sub> de taza de agua.</li>
+              <h4>Para el marinado:</h4>
+              <li><sup>1</sup><sub>4</sub> de taza de jugo de limón.</li>
+              <li>4 dientes de ajo triturados.</li>
+              <li>1 cucharadita de páprika.</li>
+              <li>
+                <sup>1</sup><sub>2</sub> cucharadita de hojuelas de chile.
+              </li>
+              <li>1 cucharada de orégano seco.</li>
+              <li>1 cucharadita de sal.</li>
+              <li>Pimienta al gusto.</li>
+            </ul>
+            <ul>
+              <h4>Para el pollo:</h4>
+              <li>4 medias pechugas de pollo, sin piel y deshuesadas.</li>
+              <li>
+                2 pimientos morrones de diferentes colores rebanados en fajitas
+                gruesas.
+              </li>
+              <li>1 ramillete de brócoli.</li>
+              <li>12-16 piezas de espárragos pelados.</li>
+              <li>2-3 calabacitas rebanadas.</li>
               <li>3 cucharadas de aceite de oliva.</li>
-              <li>5 g de sal.</li>
-            </ul>
-            <ul>
-              <h4>Para el pesto:</h4>
-              <li>50 g de hojas de albahaca</li>
-              <li><sup>1</sup>/<sub>2</sub> de taza de aceite de oliva.</li>
-              <li><sup>1</sup>/<sub>2</sub> de taza de queso parmesano.</li>
-              <li>25 g de piñones tostados.</li>
-              <li>4 dientes de ajo.</li>
-              <li>1 pizca de sal de mar.</li>
-            </ul>
-            <ul>
-              <h4>Para el topping:</h4>
-              <li>200 g de queso mozzarella reducido en grasa.</li>
-              <li>1 jitomate bola rebanado.</li>
-              <li>4 tazas de arúgula.</li>
-              <li><sup>1</sup>/<sub>2</sub> taza de vinagre balsámico.</li>
-              <li><sup>1</sup>/<sub>2</sub> taza de aceite de oliva.</li>
-              <li>2 cdas. de crema de vinagre balsámico.</li>
-              <li>Sal y pimienta.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>539 kcal</li>
+              <li>258 kcal</li>
               <hr />
-              <li>43 de grasas</li>
+              <li>4 de grasas</li>
               <hr />
-              <li>15 de proteínas</li>
+              <li>5 de proteínas</li>
               <hr />
-              <li>23 hidratos de carbono</li>
+              <li>57 hidratos de carbono</li>
             </ul>
           </section>
         </section>
         <section class="preparacion">
           <h3>Preparación</h3>
           <ol>
+            <li>Sazona el pollo con sal y pimienta.</li>
             <li>
-              Mezcla los ingredientes para la masa en un tazón y deja reposar
-              por 2 horas. Pasado este tiempo mezcla y dejas reposar nuevamente.
-              Repite cada 2 horas de 3 a 4 veces el mismo procedimiento.
+              En un frasco mezcla los ingredientes del marinado, hasta tener una
+              mezcla homogénea.
             </li>
             <li>
-              Divide la masa en dos partes, forma una bola con cada porción,
-              coloca en un tazón y barniza con aceite de oliva para que no se
-              pegue, cubre y refrigera toda la noche.
+              Reparte la marinada entre el pollo y las verduras, deja reposar al
+              menos por 10 minutos.
             </li>
             <li>
-              Al día siguiente extiende la masa con las manos, estira y forma
-              las pizzas sobre las charolas para el horno.
+              Esparce la parrilla previamente calentada con 1 cucharada
+              de aceite de oliva, cocina el pollo por ambos lados hasta que se cueza por
+              dentro y esté dorado por fuera, retira de la parrilla.
             </li>
             <li>
-              Para hacer el pesto muele en un procesador la albahaca, el piñón,
-              el ajo, el queso parmesano y la sal. Vierte Oli de Nutrioli®
-              Aceite de Oliva en forma de hilo y poco a poco hasta quedar una
-              mezcla homogeneizada.
+              Vuelve a esparcir la parrilla con 2 cucharadas de aceite y cocina los vegetales sólo el tiempo suficiente para que estén ligeramente cocidos.
             </li>
-            <li>
-              Unta las pizzas con el pesto, agrega el queso mozzarella, coloca
-              las rebanadas de jitomates sobre las pizzas, hornea a 220&#176; C
-              por 20 minutos y retira del horno.
-            </li>
-           <li>En un tazón mezcla la arúgula, el vinagre balsámico y aceite extra virgen, sazona con sal y pimienta. Agrega la crema de vinagre balsámico y finalmente la arúgula marinada. Sirve de inmediato.</li>
+            <li>Sirve inmediatamente.</li>
           </ol>
         </section>
       </section>

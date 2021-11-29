@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
+session_start();
+$_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
+include("../backendcodigo/sesion.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,7 +20,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../estilos/main.css" />
-    <link rel="stylesheet" href="/estilos/imcEstilos.css" />
+    <link rel="stylesheet" href="../estilos/imcEstilos.css" />
     <title>Calcula tu IMC</title>
   </head>
   <body>
@@ -34,28 +39,26 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link cosa" href="../index.html">HOME</a>
+              <a class="nav-link cosa" href="../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="cuidate.html">Cuídate</a>
+              <a class="nav-link" href="cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link activa" href="imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link activa" href="imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa"> 
-              <a class="nav-link" href="perfil.html">Perfil</a>
+              <a class="nav-link" href="perfil.php">Perfil</a>
           </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="loginRegistro.html"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>

@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Pollo a la mostaza</title>
+    <title>Ensalada caprese</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -35,113 +35,104 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link cosa" href="../../index.html">HOME</a>
+              <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="../recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../cuidate.html">Cuídate</a>
+              <a class="nav-link" href="../cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="../padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link" href="../imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../perfil.html">Perfil</a>
+              <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.html"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Pollo a la mostaza</h1>
+      <h1>Ensalada caprese</h1>
       <h4 class="enlaces-recetas">
-        <a href="../recetaMenu.html">Recetas</a> >
-        <a href="#">Pollo a la mostaza</a>
+        <a href="../recetaMenu.php">Recetas</a> >
+        <a href="#">Ensalada caprese</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
-          <li><i class="bi bi-alarm"></i>30 minutos</li>
+          <li><i class="bi bi-alarm"></i>20 minutos</li>
           <li id="descargarBtn">
             <i class="bi bi-cloud-arrow-down"></i>Descargar
           </li>
           <li id="imprimirBtn"><i class="bi bi-printer"></i>Imprimir</li>
         </ul>
       </section>
-      <img src="../../recursos/imgs/recetasimgs/Pollo-a-la-mostaza-2.jpg" alt="tabla-vegetal" />
+      <img
+        src="../../recursos/imgs/recetasimgs/receta-de-ensalada-caprese.jpg"
+        alt="tabla-vegetal"
+      />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Pollo a la mostaza</h1>
+        <h1 id="nombreReceta">Ensalada caprese</h1>
         <p>
-          La miel es un excelente sustituto del azúcar, actúa como antioxidante,
-          es rico en vitaminas del complejo B y puede ayudar a reducir los
-          niveles del colesterol.
-        </p>
-
-        <p>
-          Así mismo el consumo regular del pollo puede ayudar a mantener un plan
-          de alimentación saludable y benéfico para el organismo. Para encontrar
-          nuevas formas de prepararlo y desenvolverte en la cocina, te
-          presentamos esta receta de pollo a la mostaza que no te decepcionará.
+          El jitomate es rico en vitamina A, potasio y licopeno, un antioxidante
+          que protege a las células de su envejecimiento, favoreciendo también
+          el cuidado de la piel.
         </p>
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <h4>Ingredientes:</h4>
-              <li>
-                8 muslos de pollo sin piel.
-              </li>
-              <li><sup>1</sup>/<sub>4</sub> de cucharadita de sal.</li>
-              <li><sup>1</sup>/<sub>4</sub> de cucharadita de pimienta.</li>
+              <li>4 jitomates bola grandes.</li>
+              <li>1 pieza de queso mozzarella fresco (o 40 g por persona)</li>
+              <li>1 taza de hojas de albahaca fresca.</li>
+              <li>Sal al gusto.</li>
+              <li>Pimienta al gusto.</li>
             </ul>
+
             <ul>
-              <h4>Para la salsa:</h4>
-              <li><sup>1</sup>/<sub>4</sub> de taza de mostaza dijon con semillas.</li>
-              <li><sup>1</sup>/<sub>4</sub> de taza de miel.</li>
-              <li>1 cucharada de vinagre de manzana.</li>
-              <li>1 cucharada de romero fresco.</li>
-              <li>2 cucharadas de aceite de oliva.</li>
-              <li><sup>1</sup>/<sub>4</sub> de cucharadita de sal.</li>
-              <li><sup>1</sup>/<sub>4</sub> de cucharadita de pimienta.</li>
+              <h4>Para el aderezo:</h4>
+              <li><sup>1</sup><sub>2</sub> de Aceite de Oliva Extra Virgen.</li>
+              <li><sup>1</sup><sub>4</sub> de taza de vinagre balsámico.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>357 kcal</li>
+              <li>145 kcal</li>
               <hr />
-              <li>15 de grasas</li>
+              <li>10 de grasas</li>
               <hr />
-              <li>36 de proteinas</li>
+              <li>10 de proteínas</li>
               <hr />
-              <li>18 hidratos de carbono</li>
+              <li>5 hidratos de carbono</li>
             </ul>
           </section>
         </section>
         <section class="preparacion">
           <h3>Preparación</h3>
           <ol>
-            <li>Sazona con la sal y la pimienta el pollo. Calienta una sartén gruesa, vierte aceite de oliva y deja calentar</li>
             <li>
-             Frie los muslos de pollo hasta que se doren y retira del fuego.
+              Corta el jitomate, en rebanadas delgadas, entre 4 o 5 rebanadas de
+              cada jitomate. Corta el queso mozzarella en rebanadas delgadas.
+              Coloca los jitomates en el platón que hayas elegido para servir,
+              añade encina de cada rebanada de jitomate una rebanada de queso y
+              decora con una hoja de albahaca. Repite el proceso. Sazona con sal
+              y pimienta.
             </li>
             <li>
-              En un tazón mezcla todos los ingredientes para la salsa hasta homogenizar.
+              Mezcla el Aceite de Oliva Extra Virgen junto con
+              el vinagre balsámico en un pequeño recipiente. Baña esta mezcla
+              sobre la ensalada y sirve.
             </li>
-            <li>
-              Barniza el pollo dorado con esta salsa y coloca en un molde refractario.
-            </li>
-            <li>Hornear por 20 minutos a 180&#176 C con el recipiente tapado con papel aluminio, pasado este tiempo, retira el papel aluminio y hornea por 10 minutos más.</li>
           </ol>
         </section>
       </section>

@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
+session_start();
+$_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
+include("../backendcodigo/sesion.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,32 +23,32 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a href="../index.html" class="navbar-brand"><h1>I-M-C-uídate</h1></a>
+            <a href="../index.php" class="navbar-brand"><h1>I-M-C-uídate</h1></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item">
-                        <a class="nav-link cosa" href="../index.html">HOME</a>
+                        <a class="nav-link cosa" href="../index.php">HOME</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link activa" href="recetaMenu.html">Recetas</a>
+                        <a class="nav-link activa" href="recetaMenu.php">Recetas</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="cuidate.html">Cuídate</a>
+                        <a class="nav-link" href="cuidate.php">Cuídate</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="padecimientos.html">Padecimientos</a>
+                        <a class="nav-link" href="padecimientos.php">Padecimientos</a>
                     </li>
                     <li class="nav-item cosa">
                         <a class="nav-link" href="imc.html">Calcula tu IMC</a>
                     </li>
                     <li class="nav-item cosa"> 
-                        <a class="nav-link" href="perfil.html">Perfil</a>
+                        <a class="nav-link" href="perfil.php">Perfil</a>
                     </li>
-                    <li class="nav-item cosa"> 
-                        <a class="nav-link" href="loginRegistro.html">Registrate/Iniciar Sesión</a>
+                    <li class="nav-item cosa">
+                        <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>
@@ -55,39 +60,39 @@
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="card" >
             <img
-              src="/recursos/imgs/recetasimgs/Tabla-de-vegaltes-1.jpg"
+              src="../recursos/imgs/recetasimgs/Tabla-de-vegaltes-1.jpg"
               class="img-fluid"
               alt="..."
             />
             <div class="card-body text-center">
               <h5 class="card-title">Tabla de vegetales</h5>
-              <a href="/pags/recetaspags/recetaVegetales.html" class="btn btn-primary btn-block">Ver más</a>
+              <a href="recetaspags/recetaVegetales.php" class="btn btn-primary btn-block">Ver más</a>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/espagueti-bolonesa.jpg"
+                src="../recursos/imgs/recetasimgs/espagueti-bolonesa.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Espagueti a la boloñesa</h5>
-                <a href="/pags/recetaspags/recetaBolonesa.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaBolonesa.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/receta-de-ensalada-caprese.jpg"
+                src="../recursos/imgs/recetasimgs/receta-de-ensalada-caprese.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Ensalada caprese</h5>
-                <a href="/pags/recetaspags/recetaEnsaladaCaprese.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaEnsaladaCaprese.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
@@ -95,39 +100,39 @@
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/res-esparragos.jpg"
+                src="../recursos/imgs/recetasimgs/res-esparragos.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Filete de res con vegetales</h5>
-                <a href="/pags/recetaspags/recetaFileteRes.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaFileteRes.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/lomo-cerdo.jpg"
+                src="../recursos/imgs/recetasimgs/lomo-cerdo.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Lomo de cerdo con champiñones</h5>
-                <a href="/pags/recetaspags/recetaLomoCerdo.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaLomoCerdo.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/pizza-pesto-margarita.jpg"
+                src="../recursos/imgs/recetasimgs/pizza-pesto-margarita.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Pizza pesto margarita</h5>
-                <a href="/pags/recetaspags/recetaPizzaPestoMargarita.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaPizzaPestoMargarita.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
@@ -135,39 +140,39 @@
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/Pollo-a-la-mostaza-2.jpg"
+                src="../recursos/imgs/recetasimgs/Pollo-a-la-mostaza-2.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Pollo a la mostaza</h5>
-                <a href="/pags/recetaspags/recetaPolloMostaza.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaPolloMostaza.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/salmon-sellado.jpg"
+                src="../recursos/imgs/recetasimgs/salmon-sellado.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Salmón sellado</h5>
-                <a href="/pags/recetaspags/recetaSalmonSellado.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaSalmonSellado.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/Tostadas-de-champinones_1.jpg"
+                src="../recursos/imgs/recetasimgs/Tostadas-de-champinones_1.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Tostada de champiñones</h5>
-                <a href="/pags/recetaspags/recetaTostadaChampi.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaTostadaChampi.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
@@ -175,13 +180,13 @@
         <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card" >
               <img
-                src="/recursos/imgs/recetasimgs/pollo-vegetales.jpg"
+                src="../recursos/imgs/recetasimgs/pollo-vegetales.jpg"
                 class="img-fluid"
                 alt="..."
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Pollo con vegetales a la parrilla</h5>
-                <a href="/pags/recetaspags/recetaPolloVegetales.html" class="btn btn-primary btn-block">Ver más</a>
+                <a href="recetaspags/recetaPolloVegetales.php" class="btn btn-primary btn-block">Ver más</a>
               </div>
             </div>
           </div>
@@ -269,7 +274,7 @@
         <i class="fas fa-chevron-up"></i>
     </div>
 
-    <script src="/scripts/botonArriba.js"></script>
+    <script src="../scripts/botonArriba.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>

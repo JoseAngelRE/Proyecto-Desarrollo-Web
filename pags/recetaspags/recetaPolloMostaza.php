@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <title>Tostadas de champiñones</title>
+    <title>Pollo a la mostaza</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -35,38 +35,36 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link cosa" href="../../index.html">HOME</a>
+              <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../recetaMenu.html">Recetas</a>
+              <a class="nav-link" href="../recetaMenu.php">Recetas</a>
           </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../cuidate.html">Cuídate</a>
+              <a class="nav-link" href="../cuidate.php">Cuídate</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../padecimientos.html">Padecimientos</a>
+              <a class="nav-link" href="../padecimientos.php">Padecimientos</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../imcPagina.html">Calcula tu IMC</a>
+              <a class="nav-link" href="../imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-              <a class="nav-link" href="../perfil.html">Perfil</a>
+              <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="../loginRegistro.html"
-                >Registrate/Iniciar Sesión</a
-              >
-            </li>
+              <li class="nav-item cosa">
+                  <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
+              </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <article class="contenido-P">
-      <h1>Tostadas de champiñones</h1>
+      <h1>Pollo a la mostaza</h1>
       <h4 class="enlaces-recetas">
-        <a href="../recetaMenu.html">Recetas</a> >
-        <a href="#">Tostadas de champiñones</a>
+        <a href="../recetaMenu.php">Recetas</a> >
+        <a href="#">Pollo a la mostaza</a>
       </h4>
       <section class="barra-recetas">
         <ul class="nav-recetas">
@@ -77,50 +75,71 @@
           <li id="imprimirBtn"><i class="bi bi-printer"></i>Imprimir</li>
         </ul>
       </section>
-      <img
-        src="../../recursos/imgs/recetasimgs/Tostadas-de-champinones_1.jpg"
-        alt="tabla-vegetal"
-      />
+      <img src="../../recursos/imgs/recetasimgs/Pollo-a-la-mostaza-2.jpg" alt="tabla-vegetal" />
       <section class="contenido-receta">
-        <h1 id="nombreReceta">Tostadas de champiñones</h1>
+        <h1 id="nombreReceta">Pollo a la mostaza</h1>
+        <p>
+          La miel es un excelente sustituto del azúcar, actúa como antioxidante,
+          es rico en vitaminas del complejo B y puede ayudar a reducir los
+          niveles del colesterol.
+        </p>
+
+        <p>
+          Así mismo el consumo regular del pollo puede ayudar a mantener un plan
+          de alimentación saludable y benéfico para el organismo. Para encontrar
+          nuevas formas de prepararlo y desenvolverte en la cocina, te
+          presentamos esta receta de pollo a la mostaza que no te decepcionará.
+        </p>
         <section class="ingredientes-datos">
           <section class="ingredientes">
             <h3>Ingredientes</h3>
             <ul>
-              <li>4 tazas de champiñones rebanados.</li>
-              <li>3 cucharadas de ajo finamente picado.</li>
-              <li>1 chile guajillo, sin semillas.</li>
+              <h4>Ingredientes:</h4>
+              <li>
+                8 muslos de pollo sin piel.
+              </li>
+              <li><sup>1</sup>/<sub>4</sub> de cucharadita de sal.</li>
+              <li><sup>1</sup>/<sub>4</sub> de cucharadita de pimienta.</li>
+            </ul>
+            <ul>
+              <h4>Para la salsa:</h4>
+              <li><sup>1</sup>/<sub>4</sub> de taza de mostaza dijon con semillas.</li>
+              <li><sup>1</sup>/<sub>4</sub> de taza de miel.</li>
+              <li>1 cucharada de vinagre de manzana.</li>
+              <li>1 cucharada de romero fresco.</li>
               <li>2 cucharadas de aceite de oliva.</li>
-              <li>8 tostadas de maíz deshidratadas.</li>
+              <li><sup>1</sup>/<sub>4</sub> de cucharadita de sal.</li>
+              <li><sup>1</sup>/<sub>4</sub> de cucharadita de pimienta.</li>
             </ul>
           </section>
           <section class="datos">
             <h4>Valor nutritivo por porción</h4>
             <hr class="lineaDatos" />
             <ul>
-              <li>36 kcal</li>
+              <li>357 kcal</li>
               <hr />
-              <li>1 de grasas</li>
+              <li>15 de grasas</li>
               <hr />
-              <li>3 de proteínas</li>
+              <li>36 de proteinas</li>
               <hr />
-              <li>6 hidratos de carbono</li>
+              <li>18 hidratos de carbono</li>
             </ul>
           </section>
         </section>
         <section class="preparacion">
           <h3>Preparación</h3>
           <ol>
+            <li>Sazona con la sal y la pimienta el pollo. Calienta una sartén gruesa, vierte aceite de oliva y deja calentar</li>
             <li>
-              Quita el rabo del chile y retira las semillas. Corta en tiras
-              delgadas con un cuchillo o tijeras.
+             Frie los muslos de pollo hasta que se doren y retira del fuego.
             </li>
             <li>
-              Esparce 2 cucharadas de acite de oliva en una sartén, agrega el ajo picado y fríe unos segundos.
+              En un tazón mezcla todos los ingredientes para la salsa hasta homogenizar.
             </li>
-            <li>Agrega los champiñones rebanados y el chile guajillo en tiritas.</li>
-            <li>Cocina de 4 a 5 minutos o hasta que los champiñones se hayan suavizado.</li>
-            <li>Sazona al gusto con sal y pimienta, sirve sobre las tostadas.</li>
+            <li>
+              Barniza el pollo dorado con esta salsa y coloca en un molde refractario.
+            </li>
+            <li>Hornear por 20 minutos a 180&#176 C con el recipiente tapado con papel aluminio, pasado este tiempo, retira el papel aluminio y hornea por 10 minutos más.</li>
           </ol>
         </section>
       </section>
