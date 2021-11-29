@@ -1,3 +1,4 @@
+
 <?php
 error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
 session_start();

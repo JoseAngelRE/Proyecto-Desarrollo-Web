@@ -1,8 +1,10 @@
+
 <?php
 error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
 session_start();
 $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
 include("../backendcodigo/sesion.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -29,13 +29,12 @@ if (mysqli_num_rows($resultado) > 0) {
     $_SESSION["autentificado"] = true;
     $_SESSION["nombre"] = $registro["nombre"];
 
+
     if (isset($_SESSION['current_page'])) {
         header("location: " . $_SESSION['current_page']);
     } else {
         header("location: ../index.php");
     }
-
-
 
 } else {
     header("location: ../pags/loginRegistro.php");

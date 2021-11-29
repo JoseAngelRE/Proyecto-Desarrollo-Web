@@ -39,6 +39,7 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
           </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="pags/cuidate.php">Cuídate</a>
+<<<<<<< HEAD:index.php
             </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="pags/padecimientos.php">Padecimientos</a>
@@ -47,6 +48,16 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
               <a class="nav-link" href="pags/imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
+=======
+            </li>
+            <li class="nav-item cosa">
+              <a class="nav-link" href="pags/padecimientos.php">Padecimientos</a>
+            </li>
+            <li class="nav-item cosa">
+              <a class="nav-link" href="pags/imcPagina.php">Calcula tu IMC</a>
+            </li>
+            <li class="nav-item cosa">
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:index.html
               <a class="nav-link" href="pags/perfil.php">Perfil</a>
             </li>
               <?php

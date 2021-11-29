@@ -1,8 +1,10 @@
+
 <?php
 error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
 session_start();
 $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
 include("../backendcodigo/sesion.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -66,7 +68,11 @@ include("../backendcodigo/sesion.php"); ?>
             />
             <div class="card-body text-center">
               <h5 class="card-title">Tabla de vegetales</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
               <a href="recetaspags/recetaVegetales.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+              <a href="../pags/recetaspags/recetaVegetales.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
             </div>
           </div>
         </div>
@@ -79,7 +85,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Espagueti a la boloñesa</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaBolonesa.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaBolonesa.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>
@@ -92,7 +102,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Ensalada caprese</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaEnsaladaCaprese.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaEnsaladaCaprese.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>
@@ -106,7 +120,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Filete de res con vegetales</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaFileteRes.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaFileteRes.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>
@@ -119,7 +137,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Lomo de cerdo con champiñones</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaLomoCerdo.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaLomoCerdo.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>
@@ -132,7 +154,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Pizza pesto margarita</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaPizzaPestoMargarita.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaPizzaPestoMargarita.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>
@@ -146,7 +172,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Pollo a la mostaza</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaPolloMostaza.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaPolloMostaza.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>
@@ -159,7 +189,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Salmón sellado</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaSalmonSellado.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaSalmonSellado.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>
@@ -172,7 +206,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Tostada de champiñones</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaTostadaChampi.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaTostadaChampi.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>
@@ -186,7 +224,11 @@ include("../backendcodigo/sesion.php"); ?>
               />
               <div class="card-body text-center">
                 <h5 class="card-title">Pollo con vegetales a la parrilla</h5>
+<<<<<<< HEAD:pags/recetaMenu.php
                 <a href="recetaspags/recetaPolloVegetales.php" class="btn btn-primary btn-block">Ver más</a>
+=======
+                <a href="../pags/recetaspags/recetaPolloVegetales.html" class="btn btn-primary btn-block">Ver más</a>
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:pags/recetaMenu.html
               </div>
             </div>
           </div>

@@ -139,13 +139,25 @@ function alertContents() {
 
 
 function verificar() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1
   checarRequeridos([username, emailRegistro, passwordRegistro, password2]);
   checarLongitud(username, 3, 15);
   emailValido(emailRegistro);
   checarLongitud(passwordRegistro, 6, 25);
   passwordsCoinciden(passwordRegistro, password2);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1
   if (flag) {
     document.getElementById("registrar").submit();
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1
