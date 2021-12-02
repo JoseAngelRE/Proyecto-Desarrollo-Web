@@ -38,11 +38,10 @@
               <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
-<<<<<<< HEAD
+
               <a class="nav-link" href="../recetaMenu.php">Recetas</a>
-=======
-              <a class="nav-link activa" href="../recetaMenu.html">Recetas</a>
->>>>>>> Fercho
+
+
           </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="../cuidate.php">Cuídate</a>
@@ -56,15 +55,15 @@
             <li class="nav-item cosa">
               <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
-<<<<<<< HEAD
+
               <li class="nav-item cosa">
                   <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
               </li>
-=======
+
             <li>
               <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
           </li>
->>>>>>> Fercho
+
           </ul>
         </div>
       </div>

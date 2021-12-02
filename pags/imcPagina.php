@@ -22,7 +22,7 @@ include("../backendcodigo/sesion.php"); ?>
       crossorigin="anonymous"
     ></script>
     <link id="principal" rel="stylesheet" href="../estilos/main.css" />
-    <link rel="stylesheet" href="/estilos/imcEstilos.css" />
+    <link rel="stylesheet" href="../estilos/imcEstilos.css" />
     <script src="/scripts/cookies.js"> </script>
     <title>Calcula tu IMC</title>
   </head>
@@ -62,13 +62,9 @@ include("../backendcodigo/sesion.php"); ?>
               <li class="nav-item cosa">
                   <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
               </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="loginRegistro.html">Registrate/Iniciar Sesión</a>
             <li>
               <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
           </li>
-            </li>
-
           </ul>
         </div>
       </div>
@@ -210,7 +206,7 @@ include("../backendcodigo/sesion.php"); ?>
   <div id="button-up">
       <i class="fas fa-chevron-up"></i>
   </div>
-  <script src="/scripts/botonArriba.js"></script>
+  <script src="../scripts/botonArriba.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
