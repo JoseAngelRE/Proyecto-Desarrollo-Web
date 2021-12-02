@@ -16,8 +16,9 @@
       src="https://kit.fontawesome.com/5d433e8279.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../estilos/main.css" />
+    <link id="principal" rel="stylesheet" href="../estilos/main.css" />
     <link rel="stylesheet" href="../estilos/login.css" />
+    <script src="/scripts/cookies.js"> </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -55,6 +56,9 @@
               <a class="nav-link activa" href="loginRegistro.php"
                 >Registrate/Iniciar Sesión</a
               >
+              <li>
+                <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
+            </li>
             </li>
           </ul>
         </div>

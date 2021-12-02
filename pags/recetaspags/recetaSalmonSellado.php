@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../estilos/main.css" />
+    <link id="principal"rel="stylesheet" href="../../estilos/main.css" />
     <link rel="stylesheet" href="../../estilos/recetaEstilo.css" />
     <link
       rel="stylesheet"
@@ -18,6 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <script src="/scripts/cookies.js"> </script>
     <title>Salmón sellado</title>
   </head>
   <body>
@@ -38,7 +39,11 @@
               <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
+<<<<<<< HEAD
               <a class="nav-link" href="../recetaMenu.php">Recetas</a>
+=======
+              <a class="nav-link activa" href="../recetaMenu.html">Recetas</a>
+>>>>>>> Fercho
           </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="../cuidate.php">Cuídate</a>
@@ -52,9 +57,15 @@
             <li class="nav-item cosa">
               <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
+<<<<<<< HEAD
               <li class="nav-item cosa">
                   <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
               </li>
+=======
+            <li>
+              <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
+          </li>
+>>>>>>> Fercho
           </ul>
         </div>
       </div>

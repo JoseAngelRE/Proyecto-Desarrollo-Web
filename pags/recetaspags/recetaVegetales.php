@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../estilos/main.css" />
-    <link rel="stylesheet" href="../../estilos/recetaEstilo.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link id="principal"rel="stylesheet" href="../../estilos/main.css" />
+  <link rel="stylesheet" href="../../estilos/recetaEstilo.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+  <script src="/scripts/cookies.js"> </script>
     <title>Tabla de vegetales</title>
   </head>
   <body>
@@ -35,7 +38,11 @@
               <a class="nav-link cosa" href="../../index.php">HOME</a>
             </li>
             <li class="nav-item cosa">
+<<<<<<< HEAD
               <a class="nav-link" href="../recetaMenu.php">Recetas</a>
+=======
+              <a class="nav-link activa" href="../recetaMenu.html">Recetas</a>
+>>>>>>> Fercho
           </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="../cuidate.php">Cuídate</a>
@@ -49,9 +56,15 @@
             <li class="nav-item cosa">
               <a class="nav-link" href="../perfil.php">Perfil</a>
             </li>
+<<<<<<< HEAD
               <li class="nav-item cosa">
                   <a class="nav-link" href="../../backendcodigo/salir.php">Cerrar sesión</a>
               </li>
+=======
+            <li>
+              <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
+          </li>
+>>>>>>> Fercho
           </ul>
         </div>
       </div>

@@ -13,8 +13,9 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/main.css">
+    <link id="principal" rel="stylesheet" href="estilos/main.css">
     <link rel="stylesheet" href="estilos/index.css">
+    <script src="/scripts/cookies.js"> </script>
     
 </head>
 <body>
@@ -39,7 +40,6 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
           </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="pags/cuidate.php">Cuídate</a>
-<<<<<<< HEAD:index.php
             </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="pags/padecimientos.php">Padecimientos</a>
@@ -48,7 +48,6 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
               <a class="nav-link" href="pags/imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-=======
             </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="pags/padecimientos.php">Padecimientos</a>
@@ -57,7 +56,6 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
               <a class="nav-link" href="pags/imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
->>>>>>> 33be15ad0e1c1dc51e569430165a3c353352ccf1:index.html
               <a class="nav-link" href="pags/perfil.php">Perfil</a>
             </li>
               <?php
@@ -75,6 +73,9 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
             </li>";
               }
               ?>
+            <li>
+              <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
+          </li>
           </ul>
         </div>
       </div>

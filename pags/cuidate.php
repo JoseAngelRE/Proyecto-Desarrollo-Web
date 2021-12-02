@@ -16,8 +16,9 @@ include("../backendcodigo/sesion.php");
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../estilos/main.css">
+    <link  id="principal"rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/cuidate.css">
+    <script src="/scripts/cookies.js"> </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -49,6 +50,9 @@ include("../backendcodigo/sesion.php");
                     <li class="nav-item cosa"> 
                         <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
                     </li>
+                    <li>
+                      <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
+                  </li>
                 </ul>
             </div>
         </div>

@@ -18,7 +18,8 @@ include("../backendcodigo/sesion.php"); ?>
       crossorigin="anonymous"
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../estilos/main.css">
+    <link id="principal" rel="stylesheet" href="../estilos/main.css">
+    <script src="/scripts/cookies.js"> </script>
     <title>Recetas</title>
   </head>
   <body>
@@ -52,6 +53,9 @@ include("../backendcodigo/sesion.php"); ?>
                     <li class="nav-item cosa">
                         <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
                     </li>
+                    <li>
+                      <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
+                  </li>
                 </ul>
             </div>
         </div>

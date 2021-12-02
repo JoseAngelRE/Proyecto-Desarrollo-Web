@@ -21,8 +21,9 @@ include("../backendcodigo/sesion.php"); ?>
       src="https://kit.fontawesome.com/5d433e8279.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../estilos/main.css" />
-    <link rel="stylesheet" href="../estilos/imcEstilos.css" />
+    <link id="principal" rel="stylesheet" href="../estilos/main.css" />
+    <link rel="stylesheet" href="/estilos/imcEstilos.css" />
+    <script src="/scripts/cookies.js"> </script>
     <title>Calcula tu IMC</title>
   </head>
   <body>
@@ -61,6 +62,13 @@ include("../backendcodigo/sesion.php"); ?>
               <li class="nav-item cosa">
                   <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
               </li>
+            <li class="nav-item cosa">
+              <a class="nav-link" href="loginRegistro.html">Registrate/Iniciar Sesión</a>
+            <li>
+              <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
+          </li>
+            </li>
+
           </ul>
         </div>
       </div>

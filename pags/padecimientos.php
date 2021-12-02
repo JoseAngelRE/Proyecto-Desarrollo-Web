@@ -16,11 +16,10 @@ include("../backendcodigo/sesion.php"); ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../estilos/main.css">
-    <link rel="stylesheet" href="../estilos/estiloPadecimiento.css">
-    <script src="../scripts/scriptPadecimiento.js"></script>
-
-
+    <link id="principal" rel="stylesheet" href="/estilos/main.css">
+    <link rel="stylesheet" href="/estilos/estiloPadecimiento.css">
+    <script src="/scripts/scriptPadecimiento.js"></script>
+    <script src="/scripts/cookies.js"> </script>
 </head>
 
 <body>
@@ -54,6 +53,9 @@ include("../backendcodigo/sesion.php"); ?>
                     </li>
                     <li class="nav-item cosa">
                         <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
+                    </li>
+                    <li>
+                        <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
                     </li>
                 </ul>
             </div>
