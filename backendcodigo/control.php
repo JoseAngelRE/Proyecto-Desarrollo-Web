@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
-$usuario = "root";
-$contrasena = "root";
+$usuario = "fercho";
+$contrasena = "fercho";
 $basedatos = "imcuidate";
 
 

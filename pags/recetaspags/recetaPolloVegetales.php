@@ -18,7 +18,7 @@
     />
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-    <script src="/scripts/cookies.js"> </script>
+    <script src="../../scripts/cookiesRecetas.js"> </script>
     <title>Pollo con vegetales a la parrilla</title>
   </head>
   <body>

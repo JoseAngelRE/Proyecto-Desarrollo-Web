@@ -19,7 +19,7 @@ include("../backendcodigo/sesion.php"); ?>
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
     <link id="principal" rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/perfil.css">
-    <script src="/scripts/cookies.js"> </script>
+    <script src="../scripts/cookiesPags.js"> </script>
 
 </head>
 

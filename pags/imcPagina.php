@@ -23,7 +23,7 @@ include("../backendcodigo/sesion.php"); ?>
     ></script>
     <link id="principal" rel="stylesheet" href="../estilos/main.css" />
     <link rel="stylesheet" href="../estilos/imcEstilos.css" />
-    <script src="/scripts/cookies.js"> </script>
+    <script src="../scripts/cookiesPags.js"> </script>
     <title>Calcula tu IMC</title>
   </head>
   <body>

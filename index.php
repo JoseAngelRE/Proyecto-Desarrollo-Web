@@ -15,7 +15,8 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link id="principal" rel="stylesheet" href="estilos/main.css">
     <link rel="stylesheet" href="estilos/index.css">
-    <script src="/scripts/cookies.js"> </script>
+    <script src="scripts/cookiesIndex.js"> 
+  </script>
     
 </head>
 <body>
@@ -48,12 +49,6 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
               <a class="nav-link" href="pags/imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
-            </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="pags/padecimientos.php">Padecimientos</a>
-            </li>
-            <li class="nav-item cosa">
-              <a class="nav-link" href="pags/imcPagina.php">Calcula tu IMC</a>
             </li>
             <li class="nav-item cosa">
               <a class="nav-link" href="pags/perfil.php">Perfil</a>

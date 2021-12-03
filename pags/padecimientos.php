@@ -19,7 +19,7 @@ include("../backendcodigo/sesion.php"); ?>
     <link id="principal" rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/estiloPadecimiento.css">
     <script src="../scripts/scriptPadecimiento.js"></script>
-    <script src="/scripts/cookies.js"> </script>
+    <script src="../scripts/cookiesPags.js"> </script>
 </head>
 
 <body>
