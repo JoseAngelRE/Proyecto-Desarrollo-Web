@@ -1,5 +1,5 @@
 body{
-    background-color: #ffd033;
+    background-color: #fae49d;
 }
 
 main{
@@ -20,7 +20,7 @@ p{
     align-items: center;
     justify-content: center;
     height: 25vh;
-    background-color: #b8d793;
+    background-color: var(--contenedor) ;
     border-radius: 30px;
     color: #e66646;
 }
@@ -28,22 +28,23 @@ p{
 .parte{
     display: flex;
     justify-content: space-between;
-    height: 50vh;
+    height: auto;
 }
 
 .info-izq1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b8d793;
+    background-color: var(--contenedor);
     width: 45%;
-    height: 100%;
+    height: auto;
     padding: 5%;
     border-radius:  25% 10%;
 }
 
 
-ul{
+section div ul{
+    font-size: 1.2em;
     line-height:250%;
     word-wrap: break-word;
 }
@@ -53,6 +54,7 @@ ul{
 }
 
 .info-der1{
+    object-fit: cover;
     width: 50%;
 }
 
@@ -76,6 +78,9 @@ ul{
 .cuadro-izq{
     width: 50%;
 }
+.cuadro-izq{
+    object-fit: cover;
+}
 
 .cuadro-izq img{
     width: 100%;
@@ -85,7 +90,7 @@ ul{
 
 .final{
     height: 15vh;
-    background-color: #b8d793;
+    background-color: var(--contenedor);
     border-radius: 30px;
     font-size: 45px;
 }
@@ -113,6 +118,7 @@ ul{
     width: 100%;
     height: auto;
     font-size: .8em
+
 }
 
 .info-der1{

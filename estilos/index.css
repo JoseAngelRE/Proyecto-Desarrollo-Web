@@ -1,0 +1,218 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--12);
+    width: 100%;
+    height: 92vh;
+}
+header .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    background-image: url("../recursos/imgs/index-imgs/hero-Obesidad.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .hero-parrafo {
+    width:75%;
+    padding:25px 40px 10px;
+    background-color: var(--54) ;
+    color: white;
+    font-weight: bold;
+}
+header .hero-parrafo p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+main section {
+    display: flex;
+}
+/*-------- main --------*/
+/* _____ problematica _____ */
+main .problematica{
+    justify-content: center;
+    position: relative;
+    margin-top:80px;
+    height: 25vh;
+    background-color: var(--54);
+    
+}
+main .problematica .barra-circulos {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 25px;
+    width: 75%;
+    height: 10vh;   min-height: 80px;
+    top : -85px;    top: calc(-5vh - 80px);
+    background-color: var(--54);
+}
+main .problematica .barra-circulos .circulo-informativo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 37.5px;
+    background-color: var(--circulos-info);
+}
+main .problematica .img-problematica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-image: url("../recursos/imgs/index-imgs/problemas.jpg");
+    background-position: center; /* background-position: center/cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .problematica .img-problematica .problematica-parrafo {
+    padding:25px 40px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--54);
+}
+
+/* _____ section con => img y article _____ */
+main .sec-article-img {
+    height: 300px;
+}
+main .sec-article-img article {
+    padding: 20px 30px 10px;
+}
+main .sec-article-img img{
+    width: 45%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+/* _____ consultar _____ */
+main .consultar img {
+    object-position: 0% 35%;
+}
+/* _____ segundo _____ */
+main .segundo img, main .consultar img {
+    border-radius: 5vw;
+}
+
+/* _____ tercero _____ */
+main .tercero {
+    justify-content: center;
+    align-items: center;
+}
+main .tercero .mitos {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-image: url("../recursos/imgs/index-imgs/mitos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.titulo , .lista-mitos {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--54);
+    color:white;
+}
+main .tercero .mitos .titulo {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    border-left: 2px solid black;
+}
+main .tercero .mitos .lista-mitos {
+    list-style: none;
+    font-weight: bold;
+}
+
+
+/* ########## MEDIAS ########## */
+/* @media screen and (min-width: 1200px) {
+    .hero {
+        background-image: url("/recursos/imgs/index-imgs/hero-Obesidad-grande.jpg");
+        
+    }    
+} */
+@media screen and (max-width:750px) {
+    /*CLASE GLOBAL => SECTION CON ARTICLE E IMG ADENTRO*/
+    main .sec-article-img {
+        height: auto;
+    }
+    main .consultar{
+        object-position: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header .hero-parrafo p {
+        font-size: 1.5rem;
+    }
+
+    main .problematica .barra-circulos {
+        width: 90%;
+    }
+    main .problematica .img-problematica .problematica-parrafo {
+        padding:15px 20px 5px;
+    }
+
+    main .sec-article-img {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    main .sec-article-img img {
+        width: 70vw;
+        height: 35vw;
+    }
+    main .consultar img {
+        order: 2;
+    }
+
+    
+    main .tercero .mitos {
+        flex-direction: column;
+    }
+    main .tercero .mitos .titulo {
+        writing-mode: horizontal-tb;
+        transform: rotate(360deg);
+        border-bottom: 2px solid black;
+        border-left: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 370px) {
+    header .hero-parrafo {
+        width:90%;
+    }
+    header .hero-parrafo p {
+        font-size: 1rem;
+    }
+
+    main .problematica .barra-circulos {
+        width: 100%;
+    }
+    main .problematica .img-problematica .problematica-parrafo p {
+        font-size: small;
+    }
+
+    main .sec-article-img img {
+        width: 100%;
+        height: 200px;
+    }
+    main .sec-article-img article {
+        border-top: 2px solid black;
+        padding: 20px;
+    }
+
+}

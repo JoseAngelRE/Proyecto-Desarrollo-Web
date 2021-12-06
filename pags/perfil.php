@@ -1,3 +1,10 @@
+
+<?php
+error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
+session_start();
+$_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
+include("../backendcodigo/sesion.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,38 +17,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../estilos/main.css">
+    <link id="principal" rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/perfil.css">
+    <script src="../scripts/cookiesPags.js"> </script>
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a href="../index.html" class="navbar-brand"><h1>I-M-C-uídate</h1></a>
+            <a href="../index.php" class="navbar-brand"><h1>I-M-C-uídate</h1></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item">
-                        <a class="nav-link cosa" href="../index.html">HOME</a>
+                        <a class="nav-link cosa" href="../index.php">HOME</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="cuidate.html">Cuídate</a>
+                      <a class="nav-link" href="recetaMenu.php">Recetas</a>
+                  </li>
+                    <li class="nav-item cosa">
+                        <a class="nav-link" href="cuidate.php">Cuídate</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="padecimientos.html">Padecimientos</a>
+                        <a class="nav-link" href="padecimientos.php">Padecimientos</a>
                     </li>
                     <li class="nav-item cosa">
-                        <a class="nav-link" href="#">Calcula tu IMC</a>
+                        <a class="nav-link" href="imcPagina.php">Calcula tu IMC</a>
                     </li>
                     <li class="nav-item cosa"> 
-                        <a class="nav-link activa" href="perfil.html">Perfil</a>
+                        <a class="nav-link activa" href="perfil.php">Perfil</a>
                     </li>
-                    <li class="nav-item cosa"> 
-                        <a class="nav-link" href="loginRegistro.html">Registrate/Iniciar Sesión</a>
+                    <li class="nav-item cosa">
+                        <a class="nav-link" href="../backendcodigo/salir.php">Cerrar sesión</a>
                     </li>
+                    <li>
+                      <a class="nav-link"><button class="button" onclick="cambiartema()">Cambiar tema</button></a>
+                  </li>
                 </ul>
             </div>
         </div>
