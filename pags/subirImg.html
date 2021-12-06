@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../estilos/subirImg.css" />
+    </head>
+    <body>
+        <div id="errorMessage"></div>
+        <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
+            <div id="drag_upload_file">
+                <p>Suelta tu imagen aqui</p>
+                <p>o</p>
+                <p><input type="button" value="Cargar desde el pc" onclick="file_explorer();" /></p>
+                <input type="file" id="selectfile" />
+            </div>
+        </div>
+        <script src="../scripts/subirImg.js"></script>
+    </body>
+</html>

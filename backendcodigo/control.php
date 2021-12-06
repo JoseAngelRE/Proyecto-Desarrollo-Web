@@ -16,7 +16,7 @@ if (!$conexion) {
     die("Fallo: " . mysqli_connect_error());
 }
 
-$sentenciaSQL = "SELECT nombre, email, contrasena FROM usuarios WHERE email ='" . $email . "' AND contrasena ='" . $password . "'";
+$sentenciaSQL = "SELECT id_usuario, nombre, email, contrasena FROM usuarios WHERE email ='" . $email . "' AND contrasena ='" . $password . "'";
 
 $resultado = mysqli_query($conexion, $sentenciaSQL);
 
@@ -28,6 +28,7 @@ if (mysqli_num_rows($resultado) > 0) {
     session_start();
     $_SESSION["autentificado"] = true;
     $_SESSION["nombre"] = $registro["nombre"];
+    $_SESSION["id_usuario"] = $registro["id_usuario"];
 
 
     if (isset($_SESSION['current_page'])) {

@@ -46,7 +46,7 @@ main section{
 #recomendaciones{
     margin-top: 30px;
     background-color: var(--colorRecomendaciones);
-    color: white;
+    color: black;
 }
 
 #recomendaciones #titulo{

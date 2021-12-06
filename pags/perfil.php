@@ -12,7 +12,7 @@ include("../backendcodigo/sesion.php"); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto DAW</title>
+    <title>Perfil del usuario</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -20,7 +20,18 @@ include("../backendcodigo/sesion.php"); ?>
     <link id="principal" rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/perfil.css">
     <script src="../scripts/cookiesPags.js"> </script>
+    <script language="javascript">
+      function verVentana(url) {
+        
+      }
 
+      window.onload = function () {
+        document.getElementById("cambiarIMG").onclick = function () {
+          ventana = window.open("subirImg.html", "ventana", "width=330, height=320");
+          ventana.focus();
+        }
+      }
+    </script>
 </head>
 
 <body>
@@ -65,10 +76,16 @@ include("../backendcodigo/sesion.php"); ?>
         <section>
             <div id="perfilHeader">
                 <div id="icono">
-                    <img src="../recursos/imgs/iconoUsuario.png" width="200" height="200">
+                    <img src="../recursos/imgs/iconoUsuario.png" width="200" height="200"><br>
+                    <input type="button" name="cambiarIMG" id="cambiarIMG" value="Cambiar imagen" />
                 </div>
-                <div>
-                    <h1>Datos del usuario</h1>
+                <div id="title">
+                    <h1>Datos del usuario:</h1>
+                    <h2>
+                      <?php 
+                      echo $_SESSION["nombre"]; 
+                      ?>
+                    </h2>
                 </div>
             </div>
             <div id="perfilContent">
