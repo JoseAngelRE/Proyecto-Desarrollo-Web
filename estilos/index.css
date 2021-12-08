@@ -12,7 +12,7 @@ header .hero {
     width: 100%;
     height: 100%;
     margin-top: 0;
-    background-image: url("/recursos/imgs/index-imgs/hero-Obesidad.jpg");
+    background-image: url("../recursos/imgs/index-imgs/hero-Obesidad.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@ main .problematica .img-problematica {
     align-items: center;
     width: 100%;
     height: auto;
-    background-image: url("/recursos/imgs/index-imgs/problemas.jpg");
+    background-image: url("../recursos/imgs/index-imgs/problemas.jpg");
     background-position: center; /* background-position: center/cover; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,6 +93,13 @@ main .sec-article-img img{
     object-fit: cover;
     opacity: 0.9;
 }
+/* _____ puntos_obesidad _____ */
+#puntos_obesidad {
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
 /* _____ consultar _____ */
 main .consultar img {
     object-position: 0% 35%;
@@ -113,7 +120,7 @@ main .tercero .mitos {
     justify-content: center;
     width: 100%;
     padding: 20px;
-    background-image: url("/recursos/imgs/index-imgs/mitos.jpg");
+    background-image: url("../recursos/imgs/index-imgs/mitos.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

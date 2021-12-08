@@ -153,6 +153,12 @@ hr.lineaDatos{
     margin-right: 10px;
 }
 
+.navbar-brand h1{
+    color: white;
+}
+
+
+
 #imprimirBtn:hover, #descargarBtn:hover {
     cursor: pointer;
 }

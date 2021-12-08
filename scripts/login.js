@@ -25,8 +25,10 @@ document.querySelector("#linkLogin a").onclick = () => {
   document.getElementById("login").checked = true;
 };
 
-const formLogin = document.getElementById("iniciarSesion");
-const formRegistrar = document.getElementById("registrar");
+let flag = true;
+
+const formLogin = document.getElementById("btnIniciarLogin");
+const formRegistrar = document.getElementById("btnIniciarRegistro");
 const emailRegistro = document.getElementById("emailRegistro");
 const passwordRegistro = document.getElementById("passwordRegistro");
 const username = document.getElementById("nombreUsuario");
@@ -39,11 +41,13 @@ function mostrarError(input, message) {
   formControl.className = "campo-formulario error";
   const small = formControl.querySelector("small");
   small.innerText = message;
+  flag = false;
 }
 
 function mostrarExito(input) {
   const formControl = input.parentElement;
   formControl.className = "campo-formulario success";
+  flag = true;
 }
 
 function checarRequeridos(array) {
@@ -86,25 +90,62 @@ function emailValido(input) {
   }
 }
 
-formLogin.addEventListener("submit", function (e) {
+let mensaje = "";
+formLogin.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log("Submiting login data");
   checarRequeridos([email, password]);
   emailValido(email);
   checarLongitud(password, 8, 20);
-  console.log(email.value);
-  console.log(password.value);
+  
+
+  if (flag) {
+    document.getElementById("iniciarSesion").submit();
+  }
 });
 
-formRegistrar.addEventListener("submit", function (e) {
+formRegistrar.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log("Submiting register data");
+  ajax("post", '../backendcodigo/procesarNuevo.php', username.value, emailRegistro.value ,passwordRegistro.value, password2.value);
+
+});
+
+const xhttp = new XMLHttpRequest();
+
+function ajax(method, url, username, email, password, password2) {
+  xhttp.onreadystatechange = alertContents;
+  if (method == 'post') {
+    xhttp.open(method, url);
+    xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhttp.send('username=' + encodeURIComponent(username) + '&email=' +
+        encodeURIComponent(email) +'&password=' + encodeURIComponent(password) + '&password2=' + encodeURIComponent(password2));
+  }
+}
+
+function alertContents() {
+  if (xhttp.readyState === XMLHttpRequest.DONE) {
+    if (xhttp.status === 200) {
+      var response = JSON.parse(xhttp.responseText);
+      username.value = response.username;
+      emailRegistro.value = response.email;
+      passwordRegistro.value = response.password;
+      password2.value = response.password2;
+      verificar();
+    } else {
+      alert('There was a problem with the request.');
+    }
+  }
+}
+
+
+
+function verificar() {
   checarRequeridos([username, emailRegistro, passwordRegistro, password2]);
   checarLongitud(username, 3, 15);
   emailValido(emailRegistro);
-  checarLongitud(passwordRegistro, 6, 25);
+  checarLongitud(passwordRegistro, 8, 25);
   passwordsCoinciden(passwordRegistro, password2);
-  console.log(emailRegistro.value);
-  console.log(passwordRegistro.value);
-  console.log(password2.value);
-});
+
+  if (flag) {
+    document.getElementById("registrar").submit();
+  }
+}

@@ -36,7 +36,7 @@ nav{
 }
 nav .navbar-brand h1{
     font-family: 'Cinzel Decorative', cursive;
-    font-size: 35px;
+    font-size: 23px;
 }
 nav .activa {
     color: var(--54);
@@ -79,6 +79,18 @@ footer {
     transform: scale(1.1);
     border-color: rgba(0, 0, 0, 0.1);
 }
+
+.button{
+    background-color: #1c6d69; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-weight: bold;
+   
+  }
 
 /*De aquí para abajo eliminar*/
 /*El <MAIN> es el contenedor principal de cada página*/
