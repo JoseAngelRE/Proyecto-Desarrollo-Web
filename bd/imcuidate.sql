@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-12-2021 a las 10:42:18
+-- Tiempo de generación: 08-12-2021 a las 11:35:11
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -29,6 +29,25 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `ShowIMCData` (IN `id_usuario` INT(1
 SELECT peso, altura, resultado FROM imchistorial WHERE imchistorial.id_usuario = id_usuario$$
 
 DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `changelogs`
+--
+
+CREATE TABLE `changelogs` (
+  `id_log` int(11) NOT NULL,
+  `accion` varchar(255) NOT NULL,
+  `fecha` date NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `changelogs`
+--
+
+INSERT INTO `changelogs` (`id_log`, `accion`, `fecha`) VALUES
+(1, 'Se actualizó la img del usuario 1, old.fileName:420c00c00af48db40258068a6383a5a8.jpg=>ab312bc736bb8d688b267acec0232934.jpg', '2021-12-08');
 
 -- --------------------------------------------------------
 
@@ -76,8 +95,16 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `email`, `contrasena`, `fileName`) VALUES
-(1, 'root', 'rootcorreo@outlook.com', 'password', '420c00c00af48db40258068a6383a5a8.jpg'),
+(1, 'root', 'rootcorreo@outlook.com', 'password', 'ab312bc736bb8d688b267acec0232934.jpg'),
 (3, 'prueba', 'pruebacorreo@outlook.com', 'password', 'f3f0dfeced88ee5d52d2bbe5a3fa9847.jpg');
+
+--
+-- Disparadores `usuarios`
+--
+DELIMITER $$
+CREATE TRIGGER `LogsImg` AFTER UPDATE ON `usuarios` FOR EACH ROW INSERT INTO changelogs(accion) VALUES (CONCAT('Se actualizó la img del usuario ',old.id_usuario, ', old.fileName:',old.fileName,'=>',new.fileName) )
+$$
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -91,6 +118,12 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `changelogs`
+--
+ALTER TABLE `changelogs`
+  ADD PRIMARY KEY (`id_log`);
 
 --
 -- Indices de la tabla `imc`
@@ -110,10 +143,16 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `changelogs`
+--
+ALTER TABLE `changelogs`
+  MODIFY `id_log` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de la tabla `imc`
 --
 ALTER TABLE `imc`
-  MODIFY `id_imc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id_imc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

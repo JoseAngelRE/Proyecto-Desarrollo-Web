@@ -10,13 +10,7 @@
     }
 
     $sentenciaSQL = "DELETE FROM imc WHERE id_usuario='" . $_SESSION["id_usuario"] . "'";
-
-    $resultado = mysqli_query($conexion, $sentenciaSQL);
+    mysqli_query($conexion, $sentenciaSQL);
+    echo "location.reload();";
     mysqli_close($conexion);
-
-        if(mysqli_fetch_assoc($resultado)){
-            echo "location.reload();";
-        } else {
-            echo "Error al borrar el historial";
-        }
 ?>

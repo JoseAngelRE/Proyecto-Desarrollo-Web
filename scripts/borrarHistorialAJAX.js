@@ -7,7 +7,6 @@ function ready(){
     var xhttp = getHTTP();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("errorDelete").innerHTML = this.responseText;
             eval(this.responseText);
         }
     };
