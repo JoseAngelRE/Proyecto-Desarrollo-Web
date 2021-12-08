@@ -142,7 +142,7 @@ function verificar() {
   checarRequeridos([username, emailRegistro, passwordRegistro, password2]);
   checarLongitud(username, 3, 15);
   emailValido(emailRegistro);
-  checarLongitud(passwordRegistro, 6, 25);
+  checarLongitud(passwordRegistro, 8, 25);
   passwordsCoinciden(passwordRegistro, password2);
 
   if (flag) {

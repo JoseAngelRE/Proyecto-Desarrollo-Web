@@ -6,55 +6,27 @@
 
 main section{
     background-color: var(--colorFondo);
+    display: flex;
+    flex-flow: column wrap;
 }
 
 #perfilHeader{
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
 }
-
-#icono{
+#icono {
     margin-left: 5%;
-}
-
-#perfilContent{
     margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
-
-#perfilContent div{
-    width: 45%;
-    background-color:  var(--colorDatos);
-}
-
-#perfilContent div h2{
+#icono input {
     margin-top: 10px;
-    margin-left: 5%;
+    justify-content: center;
 }
 
-#perfilContent div p{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#recomendaciones{
-    margin-top: 30px;
-    background-color: var(--colorRecomendaciones);
-    color: black;
-}
-
-#recomendaciones #titulo{
-    text-align: center;
-}
-
-#recomendacionesTexto{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+#userData {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }

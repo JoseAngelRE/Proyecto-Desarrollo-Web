@@ -1,10 +1,6 @@
 <?php
 include ("funciones.php");
-
-$servidor = "localhost";
-$usuario = "root";
-$contrasena = "root";
-$basedatos = "imcuidate";
+include("variables.php");
 
 $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
 if (!$conexion) {

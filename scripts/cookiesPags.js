@@ -53,7 +53,12 @@ function cambiartema(){
 
 window.onload=function() {
     if(readCookie("estado")=="oscuro"){
-     document.getElementById('principal').href = '../estilos/temaOscuro.css';
+		document.getElementById('principal').href = '../estilos/temaOscuro.css';
     }
+	
+	document.getElementById("cambiarIMG").onclick = function () {
+		ventana = window.open("../pags/subirImg.html", "ventana", "width=330, height=320");
+		ventana.focus();
+	}
  }
 

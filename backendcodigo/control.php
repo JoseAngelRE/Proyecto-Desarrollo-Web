@@ -1,9 +1,6 @@
 <?php
-$servidor = "localhost";
-$usuario = "fercho";
-$contrasena = "fercho";
-$basedatos = "imcuidate";
 
+include("variables.php");
 
 $email = htmlentities($_REQUEST["email"], ENT_QUOTES);
 $password = htmlentities($_REQUEST["password"], ENT_QUOTES);

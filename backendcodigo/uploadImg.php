@@ -1,4 +1,6 @@
 <?php
+include("variables.php");
+error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
 session_start();
 
 $message = ''; 
@@ -17,6 +19,7 @@ $errorMessage = true;
     // sanitize file-name
     $newFileName = md5(time() . $fileName) . '.' . $fileExtension;
 
+
     // check if file has one of the following extensions
     $allowedfileExtensions = array('jpg', 'gif', 'png');
 
@@ -32,7 +35,20 @@ $errorMessage = true;
 
       if(move_uploaded_file($fileTmpPath, $dest_path)) 
       {
-        $errorMessage = false;
+        
+        $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
+        if (!$conexion) {
+          die("Fallo: " . mysqli_connect_error());
+        }
+        
+        $sentenciaSQL = "UPDATE usuarios SET fileName='".$newFileName."' WHERE id_usuario='". $_SESSION['id_usuario']. "'";
+        
+        if ( mysqli_query($conexion, $sentenciaSQL) ) {
+          $errorMessage = false;
+        } else {
+          $message = "Error al actualizar la base de datos";
+        }
+        
       }
       else 
       {

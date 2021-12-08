@@ -1,8 +1,8 @@
 <?php
 
 $servidor = "localhost";
-$usuario = "root";
-$contrasena = "root";
+$usuario = "rootAmaya";
+$contrasena = "rootAmaya";
 $basedatos = "imcuidate";
 
 ?>

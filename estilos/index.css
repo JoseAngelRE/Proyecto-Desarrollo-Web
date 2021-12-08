@@ -93,6 +93,13 @@ main .sec-article-img img{
     object-fit: cover;
     opacity: 0.9;
 }
+/* _____ puntos_obesidad _____ */
+#puntos_obesidad {
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
 /* _____ consultar _____ */
 main .consultar img {
     object-position: 0% 35%;

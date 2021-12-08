@@ -3,7 +3,11 @@
 error_reporting(E_WARNING ^ E_ALL ^ E_NOTICE);
 session_start();
 $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
-include("../backendcodigo/sesion.php"); ?>
+include("../backendcodigo/sesion.php");
+include("../backendcodigo/loadDataPerfil.php");
+include("../backendcodigo/variables.php");
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,21 +21,17 @@ include("../backendcodigo/sesion.php"); ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5d433e8279.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="../scripts/cookiesPags.js"> </script>
     <link id="principal" rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/perfil.css">
-    <script src="../scripts/cookiesPags.js"> </script>
-    <script language="javascript">
-      function verVentana(url) {
-        
-      }
 
-      window.onload = function () {
-        document.getElementById("cambiarIMG").onclick = function () {
-          ventana = window.open("subirImg.html", "ventana", "width=330, height=320");
-          ventana.focus();
-        }
-      }
-    </script>
+
 </head>
 
 <body>
@@ -72,58 +72,70 @@ include("../backendcodigo/sesion.php"); ?>
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <section>
             <div id="perfilHeader">
                 <div id="icono">
-                    <img src="../recursos/imgs/iconoUsuario.png" width="200" height="200"><br>
-                    <input type="button" name="cambiarIMG" id="cambiarIMG" value="Cambiar imagen" />
+                  <img src="<?php echo $_SESSION["userPic"]; ?>" width="200" height="200"><br>
+                  <input type="button" name="cambiarIMG" id="cambiarIMG" value="Cambiar imagen" />
                 </div>
                 <div id="title">
-                    <h1>Datos del usuario:</h1>
+                    <h1>Hola, 
+                      <?php 
+                        if (isset( $_SESSION["nombre"] ) ){
+                          echo $_SESSION["nombre"]; 
+                        }
+                      ?>
+                    </h1>
                     <h2>
                       <?php 
-                      echo $_SESSION["nombre"]; 
+                        if (isset( $_SESSION["email"] ) ){
+                          echo $_SESSION["email"]; 
+                        }
                       ?>
                     </h2>
+                    <h3>
+                      <input id="botonGet" type="submit" value="Borrar historial"/>
+                      <p id="errorDelete">
+                      </p>
+                    </h3>
                 </div>
             </div>
-            <div id="perfilContent">
-                <div id="ultimosDatos">
-                    <h2>Ultimos datos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet consequuntur voluptates vel
-                        cupiditate ducimus neque quae voluptatem ad adipisci dolorum unde excepturi quisquam modi
-                        quibusdam nostrum, et, voluptatibus eum. Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Obcaecati error odit aperiam eum fuga, minima dolore, totam dolorem soluta, nobis expedita
-                        beatae. Alias, nisi at exercitationem facere rerum suscipit earum. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Possimus aspernatur ratione magni sed odit, eligendi, cum quasi
-                        magnam maiores quo, natus quisquam laudantium ea? Ullam iusto cum magnam blanditiis ipsum?</p>
-                </div>
-                <div id="penultimosDatos">
-                    <h2>Datos anteriores</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum quod dignissimos. Nemo
-                        aut illo velit ipsam neque, voluptates natus, quaerat atque commodi dolore nesciunt accusamus
-                        fuga incidunt quos doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-                        dolores consequuntur neque repudiandae ratione quam inventore beatae. Illum doloribus
-                        consequatur tempora dolorum, officia, inventore, totam qui eveniet iure nemo et? Lorem ipsum
-                        dolor, sit amet consectetur adipisicing elit. Consectetur atque dolorem aut optio. At veniam
-                        labore porro harum consectetur inventore deleniti doloremque quia dolor? Quisquam quidem
-                        molestiae rem beatae distinctio?</p>
-                </div>
-            </div>
-            <div id="recomendaciones">
-                <div id="titulo">
-                    <h1>RECOMENDACIONES</h1>
-                </div>
-                <div id="recomendacionesTexto"> 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione voluptate explicabo ullam
-                        aliquam impedit maiores consectetur? Officia culpa a minus cum ea consectetur, tempora,
-                        temporibus exercitationem adipisci saepe sunt magnam. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Consectetur vero rerum, ullam accusamus, molestias optio consequatur quibusdam
-                        error, fuga ratione debitis non atque expedita? Quisquam atque quia consequuntur natus tenetur!
-                    </p>
-                </div>
-            </div>
+            <article id="userData">
+              <h2>Estos son tus últimos registros</h2>
+              <table id="TablaHistorial" class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Altura</th>
+                    <th scope="col">Resultado</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                <?php
+                  $conexion = mysqli_connect($servidor, $usuario, $contrasena, $basedatos);
+                  if (!$conexion) {
+                      die("Fallo: " . mysqli_connect_error());
+                  }
+                  $sentenciaSQL = "CALL `ShowIMCData`(".$_SESSION["id_usuario"].");";
+                  $imcRequest = mysqli_query($conexion, $sentenciaSQL);
+                  mysqli_close($conexion);
+
+                  if (mysqli_num_rows($imcRequest) > 0) {
+                      while ($registro = mysqli_fetch_assoc($imcRequest) ){
+                        echo "<tr> 
+                        <td>".$registro['peso']."</td>
+                        <td>".$registro['altura']."</td>
+                        <td>".$registro['resultado']."</td>
+                      </tr>";
+                      }
+                  }
+                ?>
+                
+                </tbody>
+              </table>
+            </article>
         </section>
     </main>
 
@@ -207,7 +219,7 @@ include("../backendcodigo/sesion.php"); ?>
             <i class="fas fa-chevron-up"></i>
         </div>
     
-        <script src="/scripts/botonArriba.js"></script>
+        <script src="../scripts/botonArriba.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -216,6 +228,14 @@ include("../backendcodigo/sesion.php"); ?>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script >
+      document.getElementById("cambiarIMG").onclick = function () {
+        ventana = window.open("subirImg.html", "ventana", "width=330, height=320");
+        ventana.focus();
+      }
+    </script>
+
+    <script src="../scripts/borrarHistorialAJAX.js"></script>
 </body>
 
 </html>

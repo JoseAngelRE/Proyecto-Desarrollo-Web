@@ -102,6 +102,20 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
             </article>
         </section>
 
+        <section>
+          <article id="puntos_obesidad">
+              <ul style="list-style-type: square;">
+                <li>Mala Alimentación.</li>
+                <li>Falta de educación nutrimental.</li>
+                <li>Sedentarismo.</li>
+                <li>No respetar los horarios de comida.</li>
+                <li>Falta de ingesta de frutas y verduras.</li>
+                <li>Consumo excesivo de bebidas alcohólicas.</li>
+                <li>Falta de ejercicio.</li>
+              </ul>
+            </article>
+        </section>
+
         <section class="sec-article-img consultar">
             <img src="recursos/imgs/index-imgs/tomando-talla.jpg" alt="">
             <article>
