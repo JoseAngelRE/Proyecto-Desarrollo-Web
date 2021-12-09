@@ -102,7 +102,7 @@ $_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
             </article>
         </section>
 
-        <section>
+        <section id="a">
           <article id="puntos_obesidad">
               <ul style="list-style-type: square;">
                 <li>Mala Alimentación.</li>

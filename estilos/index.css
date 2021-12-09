@@ -94,10 +94,9 @@ main .sec-article-img img{
     opacity: 0.9;
 }
 /* _____ puntos_obesidad _____ */
-#puntos_obesidad {
-    display: flex;
+#a {
+    justify-content: center;
     align-items: center;
-    background-color: black;
 }
 
 /* _____ consultar _____ */
